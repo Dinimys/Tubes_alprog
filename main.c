@@ -6,9 +6,9 @@
 time_t ambil_waktu;
 
 
-int regislogin;						//variabel dalam fungsi registrasi
+int regislogin;					    //variabel dalam fungsi registrasi
 
-	typedef struct user{				//variabel dalam fungsi registrasi dan login
+	typedef struct user{		   //variabel dalam fungsi registrasi dan login
         char namalengkap [50];
         char username [20];
         char password [20];
@@ -16,7 +16,7 @@ int regislogin;						//variabel dalam fungsi registrasi
 
 	user Pengguna;
 
-	char inputusername [20];			//variabel dalam fungsi login
+	char inputusername [20];	 //variabel dalam fungsi login
 	char inputpassword [20];
 	//AKUN YANG BISA DIGUNAKAN UNTUK LOGIN
 	char username[20] = "admin" ;
@@ -25,7 +25,7 @@ int regislogin;						//variabel dalam fungsi registrasi
 //Deklarasi struct
     struct macammenu
     {
-        int menuobat, menuobat1, menuobat2;
+        int menuobat, menuobat1, menuobat2, menuobat3, menuobat4, menuobat5, menuobat6;
     };
     struct subtotal
     {
@@ -68,26 +68,26 @@ int main(){
 void reset_data(){
 
         //MERESET HARGA BARANG
-	sub.jmlbeli1 = 0; sub.jmlbeli2 = 0; sub.jmlbeli3 = 0; sub.jmlbeli4 = 0; sub.jmlbeli5 = 0; sub.jmlbeli6 = 0; sub.jmlbeli7 = 0; sub.jmlbeli8 = 0; sub.jmlbeli9 = 0; sub.jmlbeli10 = 0;
-	sub.jmlbeli11 = 0; sub.jmlbeli12 = 0; sub.jmlbeli13 = 0; sub.jmlbeli14 = 0; sub.jmlbeli15 = 0; sub.jmlbeli16 = 0; sub.jmlbeli17 = 0; sub.jmlbeli18 = 0; sub.jmlbeli19 = 0; sub.jmlbeli20 = 0;
-	sub.jmlbeli21 = 0; sub.jmlbeli22 = 0; sub.jmlbeli23 = 0; sub.jmlbeli24 = 0; sub.jmlbeli25 = 0; sub.jmlbeli26 = 0; sub.jmlbeli27 = 0; sub.jmlbeli28 = 0; sub.jmlbeli29 = 0; sub.jmlbeli30 = 0;
-	sub.jmlbeli31 = 0; sub.jmlbeli32 = 0; sub.jmlbeli33 = 0; sub.jmlbeli34 = 0; sub.jmlbeli35 = 0; sub.jmlbeli36 = 0; sub.jmlbeli37 = 0; sub.jmlbeli38 = 0; sub.jmlbeli39 = 0; sub.jmlbeli40 = 0;
-	sub.jmlbeli41 = 0; sub.jmlbeli42 = 0; sub.jmlbeli43 = 0; sub.jmlbeli44 = 0; sub.jmlbeli45 = 0; sub.jmlbeli46 = 0; sub.jmlbeli47 = 0; sub.jmlbeli48 = 0; sub.jmlbeli49 = 0; sub.jmlbeli50 = 0;
-	sub.jmlbeli51 = 0; sub.jmlbeli52 = 0; sub.jmlbeli53 = 0; sub.jmlbeli54 = 0; sub.jmlbeli55 = 0; sub.jmlbeli56 = 0; sub.jmlbeli57 = 0; sub.jmlbeli58 = 0; sub.jmlbeli59 = 0; sub.jmlbeli60 = 0;
-	sub.jmlbeli61 = 0;
+        sub.jmlbeli1  = 0; sub.jmlbeli2  = 0; sub.jmlbeli3  = 0; sub.jmlbeli4  = 0; sub.jmlbeli5  = 0; sub.jmlbeli6  = 0; sub.jmlbeli7  = 0; sub.jmlbeli8  = 0; sub.jmlbeli9  = 0; sub.jmlbeli10 = 0;
+        sub.jmlbeli11 = 0; sub.jmlbeli12 = 0; sub.jmlbeli13 = 0; sub.jmlbeli14 = 0; sub.jmlbeli15 = 0; sub.jmlbeli16 = 0; sub.jmlbeli17 = 0; sub.jmlbeli18 = 0; sub.jmlbeli19 = 0; sub.jmlbeli20 = 0;
+        sub.jmlbeli21 = 0; sub.jmlbeli22 = 0; sub.jmlbeli23 = 0; sub.jmlbeli24 = 0; sub.jmlbeli25 = 0; sub.jmlbeli26 = 0; sub.jmlbeli27 = 0; sub.jmlbeli28 = 0; sub.jmlbeli29 = 0; sub.jmlbeli30 = 0;
+        sub.jmlbeli31 = 0; sub.jmlbeli32 = 0; sub.jmlbeli33 = 0; sub.jmlbeli34 = 0; sub.jmlbeli35 = 0; sub.jmlbeli36 = 0; sub.jmlbeli37 = 0; sub.jmlbeli38 = 0; sub.jmlbeli39 = 0; sub.jmlbeli40 = 0;
+        sub.jmlbeli41 = 0; sub.jmlbeli42 = 0; sub.jmlbeli43 = 0; sub.jmlbeli44 = 0; sub.jmlbeli45 = 0; sub.jmlbeli46 = 0; sub.jmlbeli47 = 0; sub.jmlbeli48 = 0; sub.jmlbeli49 = 0; sub.jmlbeli50 = 0;
+        sub.jmlbeli51 = 0; sub.jmlbeli52 = 0; sub.jmlbeli53 = 0; sub.jmlbeli54 = 0; sub.jmlbeli55 = 0; sub.jmlbeli56 = 0; sub.jmlbeli57 = 0; sub.jmlbeli58 = 0; sub.jmlbeli59 = 0; sub.jmlbeli60 = 0;
+        sub.jmlbeli61 = 0;
 
         //MERESET STOK BELI
-        menu_obat.acetaminophen = 0; menu_obat.acnes = 0; menu_obat.acnol1 = 0; menu_obat.acnol2 = 0; menu_obat.antasida = 0;
-        menu_obat.aspirin = 0; menu_obat.betadine_mouthwash = 0; menu_obat.benzolac = 0; menu_obat.bodrex = 0; menu_obat.cataflam = 0;
-        menu_obat.camaag_mint = 0; menu_obat.cooling1 = 0; menu_obat.cooling2 = 0; menu_obat.degirol = 0; menu_obat.dentasol = 0;
-        menu_obat.derma = 0;  menu_obat.efisol = 0;  menu_obat.erha = 0;  menu_obat.eugenia = 0;  menu_obat.troches = 0;  menu_obat.gumafixa = 0;
-        menu_obat.gastran = 0;  menu_obat.hexadol = 0;  menu_obat.ibuprofen = 0;  menu_obat.indomethacin = 0; menu_obat.inza = 0;
-        menu_obat.ketorolac = 0;  menu_obat.konidin = 0;  menu_obat.laserin = 0;  menu_obat.medi_klin = 0; menu_obat.mylanta = 0;
-        menu_obat.naproxen = 0;  menu_obat.neozep = 0;  menu_obat.nutrimax = 0;  menu_obat.obh1 = 0; menu_obat.obh2 = 0; menu_obat.omeprazole = 0;
-        menu_obat.oskadon = 0;  menu_obat.paramex = 0;  menu_obat.polycrol = 0;  menu_obat.polysilane = 0; menu_obat.ponstan = 0; menu_obat.procold = 0;
-        menu_obat.promag = 0;  menu_obat.ranitidine = 0;  menu_obat.sanmol = 0;  menu_obat.siladex = 0; menu_obat.sp = 0; menu_obat.sumagesic = 0;
-        menu_obat.tantum = 0;  menu_obat.ultraflu = 0;  menu_obat.vicks = 0;  menu_obat.verile = 0; menu_obat.vitacid = 0; menu_obat.waisan = 0;
-        menu_obat.kasa = 0;  menu_obat.hansaplast = 0;  menu_obat.kapas = 0;  menu_obat.infus = 0; menu_obat.betadine = 0; menu_obat.minyak = 0;
+        menu_obat.acetaminophen = 0; menu_obat.acnes              = 0; menu_obat.acnol1     = 0; menu_obat.acnol2       = 0; menu_obat.antasida = 0;
+        menu_obat.aspirin       = 0; menu_obat.betadine_mouthwash = 0; menu_obat.benzolac   = 0; menu_obat.bodrex       = 0; menu_obat.cataflam = 0;
+        menu_obat.camaag_mint   = 0; menu_obat.cooling1           = 0; menu_obat.cooling2   = 0; menu_obat.degirol      = 0; menu_obat.dentasol = 0;
+        menu_obat.derma         = 0; menu_obat.efisol             = 0; menu_obat.erha       = 0; menu_obat.eugenia      = 0;  menu_obat.troches = 0;  menu_obat.gumafixa    = 0;
+        menu_obat.gastran       = 0; menu_obat.hexadol            = 0; menu_obat.ibuprofen  = 0; menu_obat.indomethacin = 0; menu_obat.inza     = 0;
+        menu_obat.ketorolac     = 0; menu_obat.konidin            = 0; menu_obat.laserin    = 0; menu_obat.medi_klin    = 0; menu_obat.mylanta  = 0;
+        menu_obat.naproxen      = 0; menu_obat.neozep             = 0; menu_obat.nutrimax   = 0; menu_obat.obh1         = 0; menu_obat.obh2     = 0; menu_obat.omeprazole   = 0;
+        menu_obat.oskadon       = 0; menu_obat.paramex            = 0; menu_obat.polycrol   = 0; menu_obat.polysilane   = 0; menu_obat.ponstan  = 0; menu_obat.procold      = 0;
+        menu_obat.promag        = 0; menu_obat.ranitidine         = 0; menu_obat.sanmol     = 0; menu_obat.siladex      = 0; menu_obat.sp       = 0; menu_obat.sumagesic    = 0;
+        menu_obat.tantum        = 0; menu_obat.ultraflu           = 0; menu_obat.vicks      = 0; menu_obat.verile       = 0; menu_obat.vitacid  = 0; menu_obat.waisan       = 0;
+        menu_obat.kasa          = 0; menu_obat.hansaplast         = 0; menu_obat.kapas      = 0; menu_obat.infus        = 0; menu_obat.betadine = 0; menu_obat.minyak       = 0;
 }
 
 //TAMPILAN AWAL PROGRAM
@@ -204,14 +204,13 @@ void login() {
 	if ((strcmp(username, inputusername) == 0 || strcmp(Pengguna.username, inputusername) == 0) && ( strcmp(password, inputpassword) == 0 || strcmp(Pengguna.password, inputpassword) == 0 )	){
 		system ("cls");
 		printf ("\n\n\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
-        printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<  S U K S E S  >>>>>>>>>>>>>>>>%c\n",186,186);
-        printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<  S U K S E S  >>>>>>>>>>>>>>>>%c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
 		sleep(1);
-		//tampilan();
 		printf ("\t\t\t\t\t           Selamat  Datang  !\n\n\t\t\t\t");
 		system ("\t\t\t\t\tpause");
 		system ("cls");
-		//loading ();
+		loading ();
 		menu();
 	}
 
@@ -295,6 +294,7 @@ void jenis_penyakit(){
     int penyakit, obat;
         char yakin;
 
+    ulang1:
     system("cls");
     printf ("\n\n\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
     printf ("\t\t\t\t%c<<<<<<<<<<<<<<<< JENIS PENYAKIT >>>>>>>>>>>>>>>>%c\n",186,186);
@@ -307,36 +307,44 @@ void jenis_penyakit(){
     printf ("\t\t\t\t|   4   |  Obat Jerawat                          |\n");
     printf ("\t\t\t\t|   5   |  Sakit Radang Tenggorokan              |\n");
     printf ("\t\t\t\t|   6   |  Sakit Maag                            |\n");
-    printf ("\t\t\t\t%c   0   |  Keluar                                %c\n",186,186    );
+    printf ("\t\t\t\t%c   0   |  Back                                  %c\n",186,186    );
     printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
 	printf ("\t\t\t\t>> ");
 	scanf("%d", &penyakit);
 
 	switch (penyakit){
+        case 0:
+                menu();
+        break;
         case 1:
         	o1:
-            printf("==============================================================================================\n");
-            printf("|No.| Nama Obat \t| Harga      |\t\t|No.| Nama Obat\t\t\t |   Harga   |\n");
-            printf("|---------------------------------------------------------------------------------------------\n");
-            printf("| 1.| Aspirin\t\t|  Rp.16.800 |\t\t");
-            printf("| 5.| Naproxen\t\t\t | Rp.335.000| \n");
-            printf("| 2.| Ibuprofen\t\t|  Rp.7.900  |\t\t");
-            printf("| 6.| Ketorolac\t\t\t | Rp.43.500 |\n");
-            printf("| 3.| Acetaminophen \t|  Rp.5.200  |\t\t");
-            printf("| 7.| Paramex SK\t\t | Rp.4.600  |\n");
-            printf("| 4.| Indomethacin\t|  Rp.5.259  |\t\t");
-            printf("| 8.| Oskadon\t\t\t | Rp.3.000  |\n");
-            printf("| 9.| Bodrex\t\t\t | Rp.4.000  |\n");
-            printf("|---------------------------------------------------------------------------------------------\n");
+            system("cls");
+            printf("\t%c%c==========================================================================================================%c%c\n",219,223,223,219);
+            printf("\t|No.| Nama Obat \t| Harga      |        \t\t|No.| Nama Obat\t\t\t         |   Harga   |\n");
+            printf("\t|-------------------------------------------------------------------------------------------------------------\n");
+            printf("\t| 1.| Aspirin\t\t|  Rp.16.800 |\t\t");
+            printf("\t| 5.| Naproxen\t\t\t\t | Rp.335.000| \n");
+            printf("\t| 2.| Ibuprofen\t\t|  Rp.7.900  |\t\t");
+            printf("\t| 6.| Ketorolac\t\t\t\t | Rp.43.500 |\n");
+            printf("\t| 3.| Acetaminophen \t|  Rp.5.200  |\t\t");
+            printf("\t| 7.| Paramex SK\t\t\t | Rp.4.600  |\n");
+            printf("\t| 4.| Indomethacin\t|  Rp.5.259  |\t\t");
+            printf("\t| 8.| Oskadon\t\t\t\t | Rp.3.000  |\n");
+            printf("\t|\t\t\t\t\t\t\t| 9.| Bodrex\t\t\t\t | Rp.4.000  |\n");
+            printf("\t|------------------------------------------------------------------------------------------------------------|\n");
+            printf("\t%c%c==========================================================================================================%c%c\n",219,220,220,219);
             printf("\n ");
-            printf("\n99. Struk Pembayaran\n88. Reset pilihan\n00.  Keluar\n");
-            printf("===============================================\n");
+            printf("\n\t99. Struk Pembayaran\n\t88. Reset pilihan\n\t55. Back\n\t00. Keluar\n");
+            printf("\t===============================================\n");
 
             for (menuo.menuobat1!=0;menuo.menuobat1!=99;){
-                printf(">> ");
+                printf("\t>> ");
                 scanf("%d", &menuo.menuobat1);
 
                 switch(menuo.menuobat1){
+                        case 55:
+                                goto ulang1;
+                        break;
                         case 1:
                                 printf("\n [1] Aspirin )\n");
                                 printf("jumlah pesan =\t\t\t\t  ");
@@ -404,7 +412,7 @@ void jenis_penyakit(){
                                 Penghitungan();  //memanggil fungsi penghitungan
                         break;
                         case 88:
-                                 system("cls");  //cls untuk membuat layar menjadi kosong
+                                system("cls");  //cls untuk membuat layar menjadi kosong
                                 goto o1;  //me-reset pilihan user
                         break;
                         case 00:
@@ -423,7 +431,7 @@ void jenis_penyakit(){
                                  else if (yakin=='T'||yakin=='t')  //user membatalkan penutupan program
                                 {
                                          system("cls");
-                                         //menu_obat();
+                                         goto o1;
                                 }
                                  else  //inputan user bukan Y atau T
                                 {
@@ -459,7 +467,7 @@ void jenis_penyakit(){
             printf("| 6.| Laserin \t\t\t | Rp.28.800 |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
             printf(">> ");
-            printf("\n99. Struk Pembayaran\n88. Reset pilihan\n00.  Keluar\n");
+            printf("\n99. Struk Pembayaran\n88. Reset pilihan\n55. Back\n00. Keluar\n");
             printf("===============================================\n");
 
             for (menuo.menuobat2!=0;menuo.menuobat2!=99;){
@@ -467,6 +475,9 @@ void jenis_penyakit(){
                 scanf("%d", &menuo.menuobat2);
 
                 switch(menuo.menuobat2){
+                case 55:
+                        goto ulang1;
+                        break;
                 case 1:
                         printf("\n [1] Procold )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
@@ -548,7 +559,7 @@ void jenis_penyakit(){
                         Penghitungan();  //memanggil fungsi penghitungan
                 break;
                 case 88:
-                                system("cls");  //cls untuk membuat layar menjadi kosong
+                        system("cls");  //cls untuk membuat layar menjadi kosong
                         goto o2;  //me-reset pilihan user
                 break;
                 case 00:
@@ -564,15 +575,15 @@ void jenis_penyakit(){
                                 system("pause");
                                 exit(0);
                         }
-                                else if (yakin=='T'||yakin=='t')  //user membatalkan penutupan program
+                        else if (yakin=='T'||yakin=='t')  //user membatalkan penutupan program
                         {
-                                        system("cls");
-                                        //menu_obat();
+                                system("cls");
+                                goto o2;
                         }
-                                else  //inputan user bukan Y atau T
+                        else  //inputan user bukan Y atau T
                         {
-                                        printf("\nKesalahan inputan\n\n");
-                                        system("pause");
+                                printf("\nKesalahan inputan\n\n");
+                                system("pause");
                                 goto peyakinan1;
                         }
 
@@ -583,11 +594,10 @@ void jenis_penyakit(){
                         break;
                 }
             }
-        //     sub.totalharga=sub.jmlbeli1+sub.jmlbeli2+sub.jmlbeli3+sub.jmlbeli4+sub.jmlbeli5+sub.jmlbeli6+sub.jmlbeli7+sub.jmlbeli8+sub.jmlbeli9+sub.jmlbeli10;
-        //         printf("\n===============================\nTotal Harga adalah = Rp.%d,-\n===============================\n",sub.totalharga);
         break;
 
         case 3:
+        o3:
             printf("==============================================================================================\n");
             printf("|No.| Nama Obat \t| Harga      |\t\t|No.| Nama Obat\t\t\t |   Harga   |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
@@ -600,76 +610,115 @@ void jenis_penyakit(){
             printf("| 4.| Gumafixa\t\t|  Rp.250.000|\t\t");
             printf("| 8.| Sumagesic\t\t\t | Rp.12.000 |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
-              printf(">> ");
-            scanf("%d", &obat);
+            printf("\n99. Struk Pembayaran\n88. Reset pilihan\n55. Back\n00. Keluar\n");
+            printf("===============================================\n");
 
-            switch(obat){
+            for (menuo.menuobat3!=0;menuo.menuobat3!=99;){
+                printf(">> ");
+                scanf("%d", &menuo.menuobat3);
+
+            switch(menuo.menuobat3){
+                case 55:
+                        goto ulang1;
+                        break;
                 case 1:
                         printf("\n [1] Betadine Mouthwash)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.betadine_mouthwash);
                         printf("\n===============================================\n");
-                        sub.jmlbeli1=menu_obat.betadine_mouthwash *38500;
+                        sub.jmlbeli7=menu_obat.betadine_mouthwash *38500;
                 break;
                 case 2:
                         printf("\n [2] Ponstan)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.ponstan);
                         printf("\n===============================================\n");
-                        sub.jmlbeli2=menu_obat.ponstan *40000;
+                        sub.jmlbeli42=menu_obat.ponstan *40000;
                 break;
                 case 3:
                         printf("\n [3] Dentasol)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.dentasol);
                         printf("\n===============================================\n");
-                        sub.jmlbeli3=menu_obat.dentasol *25000;
+                        sub.jmlbeli15=menu_obat.dentasol *25000;
                 break;
                 case 4:
                         printf("\n [4] Gumafixa)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.gumafixa);
                         printf("\n===============================================\n");
-                        sub.jmlbeli4=menu_obat.gumafixa *250000;
+                        sub.jmlbeli21=menu_obat.gumafixa *250000;
                 break;
                 case 5:
                         printf("\n [5] Eugenia Dental)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.eugenia);
                         printf("\n===============================================\n");
-                        sub.jmlbeli5=menu_obat.eugenia *17199;
+                        sub.jmlbeli21=menu_obat.eugenia *17199;
                 break;
                 case 6:
                         printf("\n [6] Cooling 5 Plus )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.cooling1);
                         printf("\n===============================================\n");
-                        sub.jmlbeli6=menu_obat.cooling1 *45332;
+                        sub.jmlbeli12=menu_obat.cooling1 *45332;
                 break;
                 case 7:
                         printf("\n [7] Cataflam)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.cataflam);
                         printf("\n===============================================\n");
-                        sub.jmlbeli7=menu_obat.cataflam *9000;
+                        sub.jmlbeli10=menu_obat.cataflam *9000;
                 break;
                 case 8:
                         printf("\n [8] Sumagesic)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.sumagesic);
                         printf("\n===============================================\n");
-                        sub.jmlbeli8=menu_obat.sumagesic *12000;
+                        sub.jmlbeli49=menu_obat.sumagesic *12000;
+                case 99:
+                        Penghitungan();  //memanggil fungsi penghitungan
                 break;
-                default:
-                        printf("salah\n");
+                case 88:
+                        system("cls");  //cls untuk membuat layar menjadi kosong
+                        goto o3;  //me-reset pilihan user
                 break;
+                case 00:
+                peyakinan2:
+                        printf("Apakah anda yakin ingin keluar?\n\n[input Y untuk Ya]\t[input T untuk Tidak]\n\n");
+                        printf("Input Pilihan \t\t\t\t");
+                        scanf("%s",&yakin);
 
-                // sub.totalharga=sub.jmlbeli1+sub.jmlbeli2+sub.jmlbeli3+sub.jmlbeli4+sub.jmlbeli5+sub.jmlbeli6+sub.jmlbeli7+sub.jmlbeli8+sub.jmlbeli9+sub.jmlbeli10;
-                // printf("\n===============================\nTotal Harga adalah = Rp.%d,-\n===============================\n",sub.totalharga);
-            }
+                        if (yakin=='Y'||yakin=='y') //user yakin untuk menutup program
+                        {
+                                system("cls");
+                                printf("\t\t- Terima Kasih atas kunjungan Anda -\n\n");
+                                system("pause");
+                                exit(0);
+                        }
+                        else if (yakin=='T'||yakin=='t')  //user membatalkan penutupan program
+                        {
+                                system("cls");
+                                goto o3;
+                        }
+                        else  //inputan user bukan Y atau T
+                        {
+                                printf("\nKesalahan inputan\n\n");
+                                system("pause");
+                                goto peyakinan2;
+                        }
+
+                break;
+                default: //bila user menginputkan tidak sesuai pilihan nomor yang ada
+                printf("Kesalahan inputan, menu no.%d tidak ada dalam daftar\n",menuo.menuobat);
+                printf("- Silakan input kembali\n");
+                break;
+                }
+        }
         break;
 
         case 4:
+            o4:
             printf("==============================================================================================\n");
             printf("|No.| Nama Obat \t| Harga      |\t\t|No.| Nama Obat\t\t\t |   Harga   |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
@@ -683,83 +732,121 @@ void jenis_penyakit(){
             printf("| 9.| Derma Angel\t\t|  Rp.45.300 |\n");
             printf("| 5.| Verile Acne Gel\t|  Rp.33.100 |\t\t");
             printf("|---------------------------------------------------------------------------------------------\n");
-              printf(">> ");
-            scanf("%d", &obat);
+            printf("\n99. Struk Pembayaran\n88. Reset pilihan\n55. Back\n00. Keluar\n");
+            printf("===============================================\n");
+            for (menuo.menuobat4!=0;menuo.menuobat4!=99;){
+            printf(">> ");
+            scanf("%d", &menuo.menuobat4);
 
-            switch(obat){
+            switch(menuo.menuobat4){
+                case 55:
+                        goto ulang1;
+                        break;
                 case 1:
                         printf("\n [1] Acnes Sealing Jell )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.acnes);
                         printf("\n===============================================\n");
-                        sub.jmlbeli1=menu_obat.acnes *29000;
+                        sub.jmlbeli2=menu_obat.acnes *29000;
                 break;
                 case 2:
                         printf("\n [2] Acnol Lotion )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.acnol1);
                         printf("\n===============================================\n");
-                        sub.jmlbeli2=menu_obat.acnol1 *15000;
+                        sub.jmlbeli3=menu_obat.acnol1 *15000;
                 break;
                 case 3:
-                        printf("\n [3] Acnol Agne Gel )\n");
+                        printf("\n [3] Acnol Acne Gel )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.acnol2);
                         printf("\n===============================================\n");
-                        sub.jmlbeli3=menu_obat.acnol2 *25300;
+                        sub.jmlbeli4=menu_obat.acnol2 *25300;
                 break;
                 case 4:
                         printf("\n [4] Medi-Klin )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.medi_klin);
                         printf("\n===============================================\n");
-                        sub.jmlbeli4=menu_obat.medi_klin *45000;
+                        sub.jmlbeli30=menu_obat.medi_klin *45000;
                 break;
                 case 5:
                         printf("\n [5] Verile Acne Gel )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.verile);
                         printf("\n===============================================\n");
-                        sub.jmlbeli5=menu_obat.verile *33100;
+                        sub.jmlbeli53=menu_obat.verile *33100;
                 break;
                 case 6:
                         printf("\n [6] Erha Acne Spot Gel )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.erha);
                         printf("\n===============================================\n");
-                        sub.jmlbeli6=menu_obat.erha *50000;
+                        sub.jmlbeli18=menu_obat.erha *50000;
                 break;
                 case 7:
                         printf("\n [7] Benzolac - CL )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.benzolac);
                         printf("\n===============================================\n");
-                        sub.jmlbeli7=menu_obat.benzolac *35000;
+                        sub.jmlbeli8=menu_obat.benzolac *35000;
                 break;
                 case 8:
                         printf("\n [8] Vitacid )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.vitacid);
                         printf("\n===============================================\n");
-                        sub.jmlbeli8=menu_obat.vitacid *30000;
+                        sub.jmlbeli54=menu_obat.vitacid *30000;
                 break;
                 case 9:
                         printf("\n [9] Derma Angel )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.derma);
                         printf("\n===============================================\n");
-                        sub.jmlbeli9=menu_obat.derma *45300;
+                        sub.jmlbeli16=menu_obat.derma *45300;
+                 case 99:
+                        Penghitungan();  //memanggil fungsi penghitungan
                 break;
-                default:
-                        printf("salah\n");
+                case 88:
+                        system("cls");  //cls untuk membuat layar menjadi kosong
+                        goto o4;  //me-reset pilihan user
                 break;
+                case 00:
+                peyakinan3:
+                        printf("Apakah anda yakin ingin keluar?\n\n[input Y untuk Ya]\t[input T untuk Tidak]\n\n");
+                        printf("Input Pilihan \t\t\t\t");
+                        scanf("%s",&yakin);
 
-                // sub.totalharga=sub.jmlbeli1+sub.jmlbeli2+sub.jmlbeli3+sub.jmlbeli4+sub.jmlbeli5+sub.jmlbeli6+sub.jmlbeli7+sub.jmlbeli8+sub.jmlbeli9+sub.jmlbeli10;
-                // printf("\n===============================\nTotal Harga adalah = Rp.%d,-\n===============================\n",sub.totalharga);
+                        if (yakin=='Y'||yakin=='y') //user yakin untuk menutup program
+                        {
+                                system("cls");
+                                printf("\t\t- Terima Kasih atas kunjungan Anda -\n\n");
+                                system("pause");
+                                exit(0);
+                        }
+                        else if (yakin=='T'||yakin=='t')  //user membatalkan penutupan program
+                        {
+                                system("cls");
+                                goto o4;
+                        }
+                        else  //inputan user bukan Y atau T
+                        {
+                                printf("\nKesalahan inputan\n\n");
+                                system("pause");
+                                goto peyakinan3;
+                        }
+
+                break;
+                default: //bila user menginputkan tidak sesuai pilihan nomor yang ada
+                printf("Kesalahan inputan, menu no.%d tidak ada dalam daftar\n",menuo.menuobat);
+                printf("- Silakan input kembali\n");
+                break;
             }
+        }
         break;
 
         case 5:
+            o5:
             printf("==============================================================================================\n");
             printf("|No.| Nama Obat \t| Harga      |\t\t|No.| Nama Obat\t\t\t |   Harga   |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
@@ -772,76 +859,115 @@ void jenis_penyakit(){
             printf("| 4.| Cooling 5 Spray\t| Rp.36.000  |\t\t");
             printf("| 8.| Hexadol\t\t\t | Rp.41.000 |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
+            printf("\n99. Struk Pembayaran\n88. Reset pilihan\n55. Back\n00. Keluar\n");
+            printf("===============================================\n");
+            for (menuo.menuobat5!=0;menuo.menuobat5!=99;){
             printf(">> ");
-            scanf("%d", &obat);
+            scanf("%d", &menuo.menuobat5);
 
-            switch(obat){
+            switch(menuo.menuobat5){
+                case 55:
+                        goto ulang1;
+                        break;
                 case 1:
                         printf("\n [1] FG Troches Meiji)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.troches);
                         printf("\n===============================================\n");
-                        sub.jmlbeli1=menu_obat.troches *16000;
+                        sub.jmlbeli20=menu_obat.troches *16000;
                 break;
                 case 2:
                         printf("\n [2] Nutrimax C&C Syrup)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.nutrimax);
                         printf("\n===============================================\n");
-                        sub.jmlbeli2=menu_obat.nutrimax *128000;
+                        sub.jmlbeli34=menu_obat.nutrimax *128000;
                 break;
                 case 3:
                         printf("\n [3] Tantum Lozenges)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.tantum);
                         printf("\n===============================================\n");
-                        sub.jmlbeli3=menu_obat.tantum *34000;
+                        sub.jmlbeli50=menu_obat.tantum *34000;
                 break;
                 case 4:
                         printf("\n [4] Cooling 5 Spray)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.cooling2);
                         printf("\n===============================================\n");
-                        sub.jmlbeli4=menu_obat.cooling2 *36000;
+                        sub.jmlbeli13=menu_obat.cooling2 *36000;
                 break;
                 case 5:
                         printf("\n [5] SP Troches Meiji)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.sp);
                         printf("\n===============================================\n");
-                        sub.jmlbeli5=menu_obat.sp *17600;
+                        sub.jmlbeli48=menu_obat.sp *17600;
                 break;
                 case 6:
                         printf("\n [6] Efisol Loz )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.efisol);
                         printf("\n===============================================\n");
-                        sub.jmlbeli6=menu_obat.efisol *30000;
+                        sub.jmlbeli17=menu_obat.efisol *30000;
                 break;
                 case 7:
                         printf("\n [7] Degirol)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.degirol);
                         printf("\n===============================================\n");
-                        sub.jmlbeli7=menu_obat.degirol *14500;
+                        sub.jmlbeli14=menu_obat.degirol *14500;
                 break;
                 case 8:
                         printf("\n [8] Hexadol)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.hexadol);
                         printf("\n===============================================\n");
-                        sub.jmlbeli8=menu_obat.hexadol *41000;
+                        sub.jmlbeli23=menu_obat.hexadol *41000;
                 break;
-                default:
-                        printf("salah\n");
+                case 99:
+                        Penghitungan();  //memanggil fungsi penghitungan
                 break;
+                case 88:
+                        system("cls");  //cls untuk membuat layar menjadi kosong
+                        goto o5;  //me-reset pilihan user
+                break;
+                case 00:
+                peyakinan4:
+                        printf("Apakah anda yakin ingin keluar?\n\n[input Y untuk Ya]\t[input T untuk Tidak]\n\n");
+                        printf("Input Pilihan \t\t\t\t");
+                        scanf("%s",&yakin);
 
-                // sub.totalharga=sub.jmlbeli1+sub.jmlbeli2+sub.jmlbeli3+sub.jmlbeli4+sub.jmlbeli5+sub.jmlbeli6+sub.jmlbeli7+sub.jmlbeli8+sub.jmlbeli9+sub.jmlbeli10;
-                // printf("\n===============================\nTotal Harga adalah = Rp.%d,-\n===============================\n",sub.totalharga);
+                        if (yakin=='Y'||yakin=='y') //user yakin untuk menutup program
+                        {
+                                system("cls");
+                                printf("\t\t- Terima Kasih atas kunjungan Anda -\n\n");
+                                system("pause");
+                                exit(0);
+                        }
+                        else if (yakin=='T'||yakin=='t')  //user membatalkan penutupan program
+                        {
+                                system("cls");
+                                goto o5;
+                        }
+                        else  //inputan user bukan Y atau T
+                        {
+                                printf("\nKesalahan inputan\n\n");
+                                system("pause");
+                                goto peyakinan4;
+                        }
+
+                break;
+                default: //bila user menginputkan tidak sesuai pilihan nomor yang ada
+                printf("Kesalahan inputan, menu no.%d tidak ada dalam daftar\n",menuo.menuobat);
+                printf("- Silakan input kembali\n");
+                break;
             }
+        }
         break;
 
         case 6:
+            o6:
             printf("==============================================================================================\n");
             printf("|No.| Nama Obat \t| Harga      |\t\t|No.| Nama Obat\t\t\t |   Harga   |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
@@ -856,94 +982,127 @@ void jenis_penyakit(){
             printf("| 5.| Mylanta\t\t| Rp.18.500  |\t\t");
             printf("|10.| Omeprazole \t\t | Rp.12.300 |\n");
             printf("|---------------------------------------------------------------------------------------------\n");
-             printf(">> ");
-            scanf("%d", &obat);
+            printf("\n99. Struk Pembayaran\n88. Reset pilihan\n55. Back\n00. Keluar\n");
+            printf("===============================================\n");
+            for (menuo.menuobat6!=0;menuo.menuobat6!=99;){
+                printf(">> ");
+                scanf("%d", &menuo.menuobat6);
 
-            switch(obat){
+            switch(menuo.menuobat6){
+                case 55:
+                        goto ulang1;
+                        break;
                 case 1:
                         printf("\n [1] Promag)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.promag);
                         printf("\n===============================================\n");
-                        sub.jmlbeli1=menu_obat.promag *9000;
+                        sub.jmlbeli44=menu_obat.promag *9000;
                 break;
                 case 2:
                         printf("\n [2] Antasida Doen)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.antasida);
                         printf("\n===============================================\n");
-                        sub.jmlbeli2=menu_obat.antasida *13500;
+                        sub.jmlbeli5=menu_obat.antasida *13500;
                 break;
                 case 3:
                         printf("\n [3] Waisan)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.waisan);
                         printf("\n===============================================\n");
-                        sub.jmlbeli3=menu_obat.waisan *15000;
+                        sub.jmlbeli55=menu_obat.waisan *15000;
                 break;
                 case 4:
                         printf("\n [4] Camaag Mint)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.camaag_mint);
                         printf("\n===============================================\n");
-                        sub.jmlbeli4=menu_obat.camaag_mint *71820;
+                        sub.jmlbeli11=menu_obat.camaag_mint *71820;
                 break;
                 case 5:
                         printf("\n [5] Mylanta)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.mylanta);
                         printf("\n===============================================\n");
-                        sub.jmlbeli5=menu_obat.mylanta *18500;
+                        sub.jmlbeli31=menu_obat.mylanta *18500;
                 break;
                 case 6:
                         printf("\n [6] Gastran )\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.gastran);
                         printf("\n===============================================\n");
-                        sub.jmlbeli6=menu_obat.gastran *8402;
+                        sub.jmlbeli22=menu_obat.gastran *8402;
                 break;
                 case 7:
                         printf("\n [7] Polysilane)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.polysilane);
                         printf("\n===============================================\n");
-                        sub.jmlbeli7=menu_obat.polysilane *9500;
+                        sub.jmlbeli41=menu_obat.polysilane *9500;
                 break;
                 case 8:
                         printf("\n [8] Ranitidine)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.ranitidine);
                         printf("\n===============================================\n");
-                        sub.jmlbeli8=menu_obat.ranitidine *5600;
+                        sub.jmlbeli45=menu_obat.ranitidine *5600;
                 break;
                  case 9:
                         printf("\n [9] Polycrol)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.polycrol);
                         printf("\n===============================================\n");
-                        sub.jmlbeli9=menu_obat.polycrol *10900;
+                        sub.jmlbeli40=menu_obat.polycrol *10900;
                 break;
                 case 10:
                         printf("\n [10] Omeprazole)\n");
                         printf("jumlah pesan =\t\t\t\t  ");
                         scanf("%d",&menu_obat.omeprazole);
                         printf("\n===============================================\n");
-                        sub.jmlbeli10=menu_obat.omeprazole *12300;
+                        sub.jmlbeli37=menu_obat.omeprazole *12300;
                 break;
-                default:
-                        printf("salah\n");
+                  case 99:
+                        Penghitungan();  //memanggil fungsi penghitungan
                 break;
+                case 88:
+                        system("cls");  //cls untuk membuat layar menjadi kosong
+                        goto o6;  //me-reset pilihan user
+                break;
+                case 00:
+                peyakinan5:
+                        printf("Apakah anda yakin ingin keluar?\n\n[input Y untuk Ya]\t[input T untuk Tidak]\n\n");
+                        printf("Input Pilihan \t\t\t\t");
+                        scanf("%s",&yakin);
 
-                sub.totalharga=sub.jmlbeli1+sub.jmlbeli2+sub.jmlbeli3+sub.jmlbeli4+sub.jmlbeli5+sub.jmlbeli6+sub.jmlbeli7+sub.jmlbeli8+sub.jmlbeli9+sub.jmlbeli10;
-                printf("\n===============================\nTotal Harga adalah = Rp.%d,-\n===============================\n",sub.totalharga);
+                        if (yakin=='Y'||yakin=='y') //user yakin untuk menutup program
+                        {
+                                system("cls");
+                                printf("\t\t- Terima Kasih atas kunjungan Anda -\n\n");
+                                system("pause");
+                                exit(0);
+                        }
+                        else if (yakin=='T'||yakin=='t')  //user membatalkan penutupan program
+                        {
+                                system("cls");
+                                goto o6;
+                        }
+                        else  //inputan user bukan Y atau T
+                        {
+                                printf("\nKesalahan inputan\n\n");
+                                system("pause");
+                                goto peyakinan5;
+                        }
+
+                break;
+                default: //bila user menginputkan tidak sesuai pilihan nomor yang ada
+                printf("Kesalahan inputan, menu no.%d tidak ada dalam daftar\n",menuo.menuobat);
+                printf("- Silakan input kembali\n");
+                break;
             }
+        }
         break;
-        default:
-                printf("salah\n");
-        break;
-                // sub.totalharga=sub.jmlbeli1+sub.jmlbeli2+sub.jmlbeli3+sub.jmlbeli4+sub.jmlbeli5+sub.jmlbeli6+sub.jmlbeli7+sub.jmlbeli8+sub.jmlbeli9+sub.jmlbeli10;
-                // printf("\n===============================\nTotal Harga adalah = Rp.%d,-\n===============================\n",sub.totalharga);
-	}
+        }
 }
 
 
@@ -1927,5 +2086,278 @@ void struk()
         printf("\n|                                                               |\n");
         printf("-----------------------------------------------------------------\n");
 
+        cetak_struk();
         reset_data();
+    }
+
+
+void cetak_struk()
+    {
+        FILE *in = fopen ("struk_pembelian_obat.txt", "a+");
+        time(&ambil_waktu); //mengambil waktu saat ini
+        fprintf(in,"=================================================================\n");
+        fprintf(in,"| \t\t\tStruk Pembayaran                    \t|\n");
+        fprintf(in,"| \t\t....................................\t\t|\n");
+        fprintf(in,"| \t     ..................................                 |\n");
+        fprintf(in,"|_______________________________________________________________|\n");
+        fprintf(in,"|    Nama Obat  \t| Harga Satuan  | Jumlah  | \t    Total  \t|\n");
+        fprintf(in,"|=======================|===============|=========|=====================|\n");
+        if (sub.jmlbeli1>0)
+        {
+        fprintf(in,"|    Acetaminophen \t|     5.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
+        }
+                if (sub.jmlbeli2>0)
+        {
+        fprintf(in,"\n|  Acnes Sealing Jell\t|     29.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
+        }
+                if (sub.jmlbeli3>0)
+        {
+        fprintf(in,"\n|    Acnol Lotion\t|     15.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
+        }
+                if (sub.jmlbeli4>0)
+        {
+        fprintf(in,"\n|    Acnol  acne gel\t|     25.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
+        }
+                if (sub.jmlbeli5>0)
+        {
+        fprintf(in,"\n|    Antasida Doen\t|     13.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.antasida,sub.jmlbeli5);
+        }
+                if (sub.jmlbeli6>0)
+        {
+        fprintf(in,"\n|    Aspirin\t\t|     16.800 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.aspirin,sub.jmlbeli6);
+        }
+                if (sub.jmlbeli7>0)
+        {
+        fprintf(in,"\n|    Betadine Mouthwash\t|     38.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.betadine_mouthwash,sub.jmlbeli7);
+        }
+                if (sub.jmlbeli8>0)
+        {
+        fprintf(in,"\n|    Benzolac - CL\t|     35.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.benzolac,sub.jmlbeli8);
+        }
+                if (sub.jmlbeli9>0)
+        {
+        fprintf(in,"\n|    Bodrex\t\t\t|     4.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.bodrex,sub.jmlbeli9);
+        }
+                if (sub.jmlbeli10>0)
+        {
+        fprintf(in,"\n|    Cataflam\t\t\t|     9.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cataflam,sub.jmlbeli10);
+        }
+                if (sub.jmlbeli11>0)
+        {
+        fprintf(in,"\n|    Camaag Mint\t|     71.820  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.camaag_mint,sub.jmlbeli11);
+        }
+                if (sub.jmlbeli12>0)
+        {
+        fprintf(in,"\n|    Cooling 5 Plus\t|  45.332  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling1,sub.jmlbeli12);
+        }
+                if (sub.jmlbeli13>0)
+        {
+        fprintf(in,"\n|    Cooling 5 Spray\t|  36.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling2,sub.jmlbeli13);
+        }
+                if (sub.jmlbeli14>0)
+        {
+        fprintf(in,"\n|    Degirol\t\t\t|  14.500  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.degirol,sub.jmlbeli14);
+        }
+                if (sub.jmlbeli15>0)
+        {
+        fprintf(in,"\n|    Dentasol\t\t\t|  25.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.dentasol,sub.jmlbeli15);
+        }
+                if (sub.jmlbeli16>0)
+        {
+        fprintf(in,"\n|   Derma Angel\t|  45.300 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.derma,sub.jmlbeli16);
+        }
+                if (sub.jmlbeli17>0)
+        {
+        fprintf(in,"\n|    Efisol Loz\t|  30.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.efisol,sub.jmlbeli17);
+        }
+                   if (sub.jmlbeli18>0)
+        {
+        fprintf(in,"\n|  Erha Acne Spot Gel  \t|  350.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.erha,sub.jmlbeli18);
+        }
+           if (sub.jmlbeli19>0)
+        {
+        fprintf(in,"\n|   Eugenia Dental\t| 17.199  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.eugenia,sub.jmlbeli19);
+        }
+                   if (sub.jmlbeli20>0)
+        {
+        fprintf(in,"\n|    FG Troches Meiji\t| 16.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.troches,sub.jmlbeli20);
+        }
+                   if (sub.jmlbeli21>0)
+        {
+        fprintf(in,"\n|    Gumafixa\t|  250.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.gumafixa,sub.jmlbeli21);
+        }
+                   if (sub.jmlbeli22>0)
+        {
+        fprintf(in,"\n|    Gastran\t|  8.402  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.gastran,sub.jmlbeli22);
+        }
+                   if (sub.jmlbeli23>0)
+        {
+        fprintf(in,"\n|    Hexadol\t|  41.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.hexadol,sub.jmlbeli23);
+        }
+                   if (sub.jmlbeli24>0)
+        {
+        fprintf(in,"\n|    Ibuprofen\t|  7.900  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.ibuprofen,sub.jmlbeli24);
+        }
+                   if (sub.jmlbeli25>0)
+        {
+        fprintf(in,"\n|    Indomethacin\t|  5.259 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.indomethacin,sub.jmlbeli25);
+        }
+                   if (sub.jmlbeli26>0)
+        {
+        fprintf(in,"\n|    Inza\t|  3.200  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.inza,sub.jmlbeli26);
+        }
+                   if (sub.jmlbeli27>0)
+        {
+        fprintf(in,"\n|    Ketorolac\t|  43.500  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.ketorolac,sub.jmlbeli27);
+        }
+                   if (sub.jmlbeli28>0)
+        {
+        fprintf(in,"\n|    Konidin\t| 2.800  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.konidin,sub.jmlbeli28);
+        }
+                   if (sub.jmlbeli29>0)
+        {
+        fprintf(in,"\n|    Laserin\t|  28.800 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.laserin,sub.jmlbeli29);
+        }
+                   if (sub.jmlbeli30>0)
+        {
+        fprintf(in,"\n|    Medi-Klin\t| 45.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.medi_klin,sub.jmlbeli30);
+        }
+                   if (sub.jmlbeli31>0)
+        {
+        fprintf(in,"\n|    Mylanta\t| 18.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.mylanta,sub.jmlbeli31);
+        }
+                   if (sub.jmlbeli32>0)
+        {
+        fprintf(in,"\n|    Naproxen\t|  335.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.naproxen,sub.jmlbeli32);
+        }
+                   if (sub.jmlbeli33>0)
+        {
+        fprintf(in,"\n|    Neozep Forte\t|  3.100  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.neozep,sub.jmlbeli33);
+        }
+                   if (sub.jmlbeli34>0)
+        {
+        fprintf(in,"\n|   Nutrimax C&C Syrup\t|  128.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.nutrimax,sub.jmlbeli34);
+        }
+                   if (sub.jmlbeli35>0)
+        {
+        fprintf(in,"\n|    OBH Combi\t|  16.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.obh1,sub.jmlbeli35);
+        }
+                   if (sub.jmlbeli36>0)
+        {
+        fprintf(in,"\n|    OBH Combi Anak\t|  18.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.obh2,sub.jmlbeli36);
+        }
+                   if (sub.jmlbeli37>0)
+        {
+        fprintf(in,"\n|    Omeprazole\t|  12.300  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.omeprazole,sub.jmlbeli37);
+        }
+                   if (sub.jmlbeli38>0)
+        {
+        fprintf(in,"\n|   Oskadon\t|  3.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.oskadon,sub.jmlbeli38);
+        }
+                   if (sub.jmlbeli39>0)
+        {
+        fprintf(in,"\n|    Paramex SK\t|  4.600  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.paramex,sub.jmlbeli39);
+        }
+                   if (sub.jmlbeli40>0)
+        {
+        fprintf(in,"\n|    Polycrol\t|  10.900 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.polycrol,sub.jmlbeli40);
+        }
+                   if (sub.jmlbeli41>0)
+        {
+        fprintf(in,"\n|    Polysilane\t|  9.500\t|    %d\t  |  Rp.%d\t\t|",menu_obat.polysilane,sub.jmlbeli41);
+        }
+                   if (sub.jmlbeli42>0)
+        {
+        fprintf(in,"\n|    Ponstan\t|  40.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ponstan,sub.jmlbeli42);
+        }
+                   if (sub.jmlbeli43>0)
+        {
+        fprintf(in,"\n|    Procold\t|  4.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.procold,sub.jmlbeli43);
+        }
+                   if (sub.jmlbeli44>0)
+        {
+        fprintf(in,"\n|    Promag\t\t\t|  9.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.promag,sub.jmlbeli44);
+        }
+                   if (sub.jmlbeli45>0)
+        {
+        fprintf(in,"\n|    Ranitidine\t|  5.600\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ranitidine,sub.jmlbeli45);
+        }
+                   if (sub.jmlbeli46>0)
+        {
+        fprintf(in,"\n|    Sanmol\t|  2.700\t|    %d\t  |  Rp.%d\t\t|",menu_obat.sanmol,sub.jmlbeli46);
+        }
+                   if (sub.jmlbeli47>0)
+        {
+        fprintf(in,"\n|    Siladex Cough\t|  17.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.siladex,sub.jmlbeli47);
+        }
+                   if (sub.jmlbeli48>0)
+        {
+        fprintf(in,"\n|    SP Troches Meiji\t|  17.600 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.sp,sub.jmlbeli48);
+        }
+                   if (sub.jmlbeli49>0)
+        {
+        fprintf(in,"\n|   Sumagesic \t|  12.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.sumagesic,sub.jmlbeli49);
+        }
+                   if (sub.jmlbeli50>0)
+        {
+        fprintf(in,"\n|    Tantum Lozenges\t|  34.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.tantum,sub.jmlbeli50);
+        }
+                   if (sub.jmlbeli51>0)
+        {
+        fprintf(in,"\n|    Ultraflu\t|  4.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ultraflu,sub.jmlbeli51);
+        }
+                   if (sub.jmlbeli52>0)
+        {
+        fprintf(in,"\n|    Vicks Formula 44\t|  20.100\t|    %d\t  |  Rp.%d\t\t|",menu_obat.vicks,sub.jmlbeli52);
+        }
+                   if (sub.jmlbeli53>0)
+        {
+        fprintf(in,"\n|    Verile Acne Gel\t|  33.100\t|    %d\t  |  Rp.%d\t\t|",menu_obat.verile,sub.jmlbeli53);
+        }
+                   if (sub.jmlbeli54>0)
+        {
+        fprintf(in,"\n|    Vitacid\t|  30.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.vitacid,sub.jmlbeli54);
+        }
+                   if (sub.jmlbeli55>0)
+        {
+        fprintf(in,"\n|    Waisan\t|  15.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.waisan,sub.jmlbeli55);
+        }
+                   if (sub.jmlbeli56>0)
+        {
+        fprintf(in,"\n|    Kasa Steril\t|  8.733\t|    %d\t  |  Rp.%d\t\t|",menu_obat.kasa,sub.jmlbeli56);
+        }
+                   if (sub.jmlbeli57>0)
+        {
+        fprintf(in,"\n|    Hansaplast\t|  16.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.hansaplast,sub.jmlbeli57);
+        }
+                   if (sub.jmlbeli58>0)
+        {
+        fprintf(in,"\n|    Kapas Pembalut\t|  18.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.kapas,sub.jmlbeli58);
+        }
+                   if (sub.jmlbeli59>0)
+        {
+        fprintf(in,"\n|    Infus\t|  12.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.infus,sub.jmlbeli59);
+        }
+                   if (sub.jmlbeli60>0)
+        {
+        fprintf(in,"\n|    Betadine\t|  6.500\t|    %d\t  |  Rp.%d\t\t|",menu_obat.betadine,sub.jmlbeli60);
+        }
+                   if (sub.jmlbeli61>0)
+        {
+        fprintf(in,"\n|    Minyak Kayu Putih\t|  46.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.minyak,sub.jmlbeli61);
+        }
+
+
+
+        fprintf(in,"\n|_______________________________________________________________|");
+        fprintf(in,"\n| Total Keseluruhan = %d\t\t\t\t\t|", sub.totalharga);
+        fprintf(in,"\n| Uang bayar        = %d\t\t\t\t\t|", sub.bayar);
+        fprintf(in,"\n| Kembalian         = %d\t\t\t\t\t|", sub.kembalian);
+        fprintf(in,"\n|                                                               |");
+        fprintf(in,"\n|                                                               |");
+        fprintf(in,"\n| Waktu/Hari : %s|", ctime (&ambil_waktu));
+        fprintf(in,"| Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t|");
+        fprintf(in,"\n|                                                               |\n");
+        fprintf(in,"-----------------------------------------------------------------\n\n\n");
+    fclose(in);
     }
