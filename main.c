@@ -173,7 +173,10 @@ void terminal(){
 void registrasi() {	//deklarasi fungsi void
     system("cls");
 
-    printf ("\t\t\t\t\t\t<REGISTRASI>\n\n");
+    printf ("\n\n\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+    printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<  REGISTRASI  >>>>>>>>>>>>>>>>>%c\n",186,186);
+    printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);	
+    printf ("\n");
     printf ("\t\t\t\tMasukkan nama lengkap : ");
     gets (Pengguna.namalengkap);	//memanggil array of char nama lengkap dengan spasi
     fflush (stdin);
@@ -186,14 +189,36 @@ void registrasi() {	//deklarasi fungsi void
     scanf ("%s", &Pengguna.password);
     fflush (stdin);
     system ("cls");
+
+    //Mencetak akun registrasi ke dalam file akun
+    FILE *akun=fopen("akun.txt", "w+");
+    fprintf(akun,"Nama user: %s\n", Pengguna.namalengkap);
+    fprintf(akun,"Username : %s\n", Pengguna.username);
+    fprintf(akun,"Password : %s\n", Pengguna.password);
+    fprintf(akun,"================================\n");
+
+       strcpy(username, Pengguna.username);
+       strcpy(password, Pengguna.password);
+
+//     username = Pengguna.username;
+//     password = Pengguna.password;
+}
+
+
+void cetak_login(){
+        FILE *cetak= fopen ("catatan login.txt", "w+");
+        time(&ambil_waktu);
+
+        fprintf(cetak,"username : %s\n", username);
+        fprintf(cetak,"Tanggal  : %s\n", ctime (&ambil_waktu));
 }
 
 void login() {
 
 	system("cls");
 	printf ("\n\n\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
-    printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<     LOGIN    >>>>>>>>>>>>>>>>>%c\n",186,186);
-    printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+        printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<     LOGIN    >>>>>>>>>>>>>>>>>%c\n",186,186);
+        printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
 	printf ("\n");
 	printf ("\t\t\t\tMasukkan username : ");
 	scanf ("%s", &inputusername);
@@ -209,9 +234,10 @@ void login() {
                 printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<  S U K S E S  >>>>>>>>>>>>>>>>%c\n",186,186);
                 printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
 		sleep(1);
-		printf ("\t\t\t\t\t         Selamat  Datang  !\n\n\t\t\t\t");
+		printf ("\t\t\t\t\t        Selamat  Datang  %s !\n\n\t\t\t\t", username);
 		system ("\t\t\t\t\tpause");
 		system ("cls");
+                cetak_login();
 		//loading ();
 		menu();
 	}
