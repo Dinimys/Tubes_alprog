@@ -66,3 +66,131 @@
 -----------------------------------------------------------------
 
 
+======================================================================================
+| 			                     STRUK PEMBAYARAN                                       	|
+| 		                       APOTEK JAYA ABADI                                    		|
+| 	Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |
+|_______________________________________________________________|
+|    Nama Obat  	| Harga Satuan  | Jumlah  | 	    Total  	|
+|=======================|===============|=========|=====================|
+|    Acetaminophen 	|     5.200	|    3	  |  Rp.15600		|
+|    Acnol  acne gel	|     25.300	|    1	  |  Rp.25300		|
+|_______________________________________________________________|
+| Total Keseluruhan = 40900					|
+| Uang bayar        = 50000					|
+| Kembalian         = 9100					|
+|                                                               |
+|                                                               |
+| Waktu/Hari : Mon Dec 12 22:42:27 2022
+|| Perhatian : Barang yang dibeli tidak bisa dikembalikan!	|
+|                                                               |
+-----------------------------------------------------------------
+
+
+======================================================================================
+| 			                     STRUK PEMBAYARAN                                       	|
+| 		                       APOTEK JAYA ABADI                                    		|
+| 	Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |
+|_______________________________________________________________|
+|    Nama Obat  	| Harga Satuan  | Jumlah  | 	    Total  	|
+|=======================|===============|=========|=====================|
+
+|    Acnol  acne gel	|     25.300	|    1	  |  Rp.25300		|
+|    Mylanta	| 18.500 	|    2	  |  Rp.37000		|
+|_______________________________________________________________|
+| Total Keseluruhan = 62300					|
+| Uang bayar        = 100000					|
+| Kembalian         = 37700					|
+|                                                               |
+|                                                               |
+| Waktu/Hari : Mon Dec 12 22:46:23 2022
+|| Perhatian : Barang yang dibeli tidak bisa dikembalikan!	|
+|                                                               |
+-----------------------------------------------------------------
+
+
+======================================================================================
+| 			                     STRUK PEMBAYARAN                                       	|
+| 		                       APOTEK JAYA ABADI                                    		|
+| 	Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |
+|_______________________________________________________________|
+|    Nama Obat  	| Harga Satuan  | Jumlah  | 	    Total  	|
+|=======================|===============|=========|=====================|
+|    Acetaminophen 	|     5.200	|    1	  |  Rp.5200		|
+|    Betadine Mouthwash	|     38.500 	|    4	  |  Rp.154000		|
+|_______________________________________________________________|
+| Total Keseluruhan = 159200					|
+| Uang bayar        = 170000					|
+| Kembalian         = 10800					|
+|                                                               |
+|                                                               |
+| Waktu/Hari : Mon Dec 12 22:50:54 2022
+|| Perhatian : Barang yang dibeli tidak bisa dikembalikan!	|
+|                                                               |
+-----------------------------------------------------------------
+
+
+======================================================================================
+| 			                STRUK PEMBAYARAN                                       	|
+| 		                    APOTEK JAYA ABADI                                    		|
+| 	Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |
+|_______________________________________________________________|
+|    Nama Obat  	| Harga Satuan  | Jumlah  | 	    Total  	|
+|=======================|===============|=========|=====================|
+
+|  Acnes Sealing Jell	|     29.000	|    1	  |  Rp.29000		|
+|    Aspirin		|     16.800 	|    1	  |  Rp.16800		|
+|_______________________________________________________________|
+| Total Keseluruhan = 45800					|
+| Uang bayar        = 50000					|
+| Kembalian         = 4200					|
+|                                                               |
+|                                                               |
+| Waktu/Hari : Mon Dec 12 22:54:54 2022
+|| Perhatian : Barang yang dibeli tidak bisa dikembalikan!	|
+|                                                               |
+-----------------------------------------------------------------
+
+
+======================================================================================
+| 			                STRUK PEMBAYARAN                                       	|
+| 		                    APOTEK JAYA ABADI                                    		|
+| 	Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |
+|_______________________________________________________________|
+|    Nama Obat  	| Harga Satuan  | Jumlah  | 	    Total  	|
+|=======================|===============|=========|=====================|
+
+|    Verile Acne Gel	|  33.100	|    7	  |  Rp.231700		|
+|_______________________________________________________________|
+| Total Keseluruhan = 231700					|
+| Uang bayar        = 250000					|
+| Kembalian         = 18300					|
+|                                                               |
+|                                                               |
+| Waktu/Hari : Mon Dec 12 22:57:53 2022
+|| Perhatian : Barang yang dibeli tidak bisa dikembalikan!	|
+|                                                               |
+-----------------------------------------------------------------
+
+
+=======================================================================================
+| 			                STRUK PEMBAYARAN                                       	|
+| 		                    APOTEK JAYA ABADI                                    		|
+| 	Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |
+|_______________________________________________________________|
+|    Nama Obat  	| Harga Satuan  | Jumlah  | 	    Total  	|
+|=======================|===============|=========|=====================|
+
+|    Vitacid	|  30.000	|    5	  |  Rp.150000		|
+|_______________________________________________________________|
+| Total Keseluruhan = 150000					|
+| Uang bayar        = 150000					|
+| Kembalian         = 0					|
+|                                                               |
+|                                                               |
+| Waktu/Hari : Mon Dec 12 23:02:38 2022
+|| Perhatian : Barang yang dibeli tidak bisa dikembalikan!	|
+|                                                               |
+-----------------------------------------------------------------
+
+

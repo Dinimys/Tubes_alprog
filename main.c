@@ -1858,11 +1858,11 @@ void Penghitungan(){
 void struk()
     {
         time(&ambil_waktu); //mengambil waktu saat ini
-        printf("=================================================================\n");
-        printf("| \t\t\tStruk Pembayaran                    \t|\n");
-        printf("| \t\t....................................\t\t|\n");
-        printf("| \t     ..................................                 |\n");
-        printf("|_______________________________________________________________|\n");
+        printf("=======================================================================================\n");
+        printf("|                                STRUK PEMBAYARAN                                     |\n");
+        printf("|                                APOTEK JAYA ABADI                                    |\n");
+        printf("| Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361    |\n");
+        printf("|_____________________________________________________________________________________|\n");
         printf("|    Nama Obat  \t| Harga Satuan  | Jumlah  | \t    Total  \t|\n");
         printf("|=======================|===============|=========|=====================|\n");
         if (sub.jmlbeli1>0)
@@ -2112,16 +2112,16 @@ void struk()
 
 
 
-        printf("\n|_______________________________________________________________|");
-        printf("\n| Total Keseluruhan = %d\t\t\t\t\t|", sub.totalharga);
-        printf("\n| Uang bayar        = %d\t\t\t\t\t|", sub.bayar);
-        printf("\n| Kembalian         = %d\t\t\t\t\t|", sub.kembalian);
+        printf("\n|____________________________________________________________________________________________|");
+        printf("\n| Total Keseluruhan = %d\t\t\t\t\t\t|", sub.totalharga);
+        printf("\n| Uang bayar        = %d\t\t\t\t\t\t|", sub.bayar);
+        printf("\n| Kembalian         = %d\t\t\t\t\t\t|", sub.kembalian);
         printf("\n|                                                               |");
         printf("\n|                                                               |");
         printf("\n| Waktu/Hari : %s|", ctime (&ambil_waktu));
-        printf("| Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t|");
-        printf("\n|                                                               |\n");
-        printf("-----------------------------------------------------------------\n");
+        printf("\n|Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t\t|");
+        printf("\n|                                                                                          |\n");
+        printf("----------------------------------------------------------------------------------------------\n");
 
         cetak_struk();
         reset_data();
@@ -2132,10 +2132,10 @@ void cetak_struk()
     {
         FILE *in = fopen ("struk_pembelian_obat.txt", "a+");
         time(&ambil_waktu); //mengambil waktu saat ini
-        fprintf(in,"=================================================================\n");
-        fprintf(in,"| \t\t\tStruk Pembayaran                    \t|\n");
-        fprintf(in,"| \t\t....................................\t\t|\n");
-        fprintf(in,"| \t     ..................................                 |\n");
+        fprintf(in,"=======================================================================================\n");
+        fprintf(in,"| \t\t\t                STRUK PEMBAYARAN                                       \t|\n");
+        fprintf(in,"| \t\t                    APOTEK JAYA ABADI                                    \t\t|\n");
+        fprintf(in,"| \tJalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |\n");
         fprintf(in,"|_______________________________________________________________|\n");
         fprintf(in,"|    Nama Obat  \t| Harga Satuan  | Jumlah  | \t    Total  \t|\n");
         fprintf(in,"|=======================|===============|=========|=====================|\n");
