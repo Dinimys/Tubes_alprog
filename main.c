@@ -175,7 +175,7 @@ void registrasi() {	//deklarasi fungsi void
 
     printf ("\n\n\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
     printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<  REGISTRASI  >>>>>>>>>>>>>>>>>%c\n",186,186);
-    printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);	
+    printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
     printf ("\n");
     printf ("\t\t\t\tMasukkan nama lengkap : ");
     gets (Pengguna.namalengkap);	//memanggil array of char nama lengkap dengan spasi
