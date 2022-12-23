@@ -19,8 +19,8 @@ int regislogin;					    //variabel dalam fungsi registrasi
 	char inputusername [20];	 //variabel dalam fungsi login
 	char inputpassword [20];
 	//AKUN YANG BISA DIGUNAKAN UNTUK LOGIN
-	char username[20] = "admin" ;
-	char password[20] = "00000" ;
+	char username[20] = "admin";
+	char password[20] = "00000";
 
 //Deklarasi struct
     struct macammenu
@@ -191,22 +191,19 @@ void registrasi() {	//deklarasi fungsi void
     system ("cls");
 
     //Mencetak akun registrasi ke dalam file akun
-    FILE *akun=fopen("akun.txt", "w+");
+    FILE *akun=fopen("akun.txt", "a");
     fprintf(akun,"Nama user: %s\n", Pengguna.namalengkap);
     fprintf(akun,"Username : %s\n", Pengguna.username);
     fprintf(akun,"Password : %s\n", Pengguna.password);
     fprintf(akun,"================================\n");
 
-       strcpy(username, Pengguna.username);
-       strcpy(password, Pengguna.password);
-
-//     username = Pengguna.username;
-//     password = Pengguna.password;
+    strcpy(username, Pengguna.username);
+    strcpy(password, Pengguna.password);
 }
 
 
 void cetak_login(){
-        FILE *cetak= fopen ("catatan login.txt", "w+");
+        FILE *cetak= fopen ("catatan login.txt", "a+");
         time(&ambil_waktu);
 
         fprintf(cetak,"username : %s\n", username);
