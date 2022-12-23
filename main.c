@@ -50,7 +50,7 @@ int regislogin;					    //variabel dalam fungsi registrasi
     struct subtotal sub;
 
 
-void home();
+void home();            //Tampilan Awal Program
 void registrasi();
 void login();
 void terminal();
