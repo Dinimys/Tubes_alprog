@@ -1894,67 +1894,67 @@ void struk()
         printf("|=======================|====================|===============|========================|");
         if (sub.jmlbeli1>0)
         {
-        printf("\n|    Acetaminophen \t|        5.200       |       %d\t\t|  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
+        printf("\n|    Acetaminophen \t|        5.200       |       %d\t     |  Rp.%d\t\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
         }
                 if (sub.jmlbeli2>0)
         {
-        printf("\n|  Acnes Sealing Jell\t|       29.000       |       %d\t\t|  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
+        printf("\n|    Acnes Sealing Jell |       29.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
         }
                 if (sub.jmlbeli3>0)
         {
-        printf("\n|    Acnol Lotion  \t|       15.000       |    %d\t\t|  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
+        printf("\n|    Acnol Lotion  \t|       15.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
         }
                 if (sub.jmlbeli4>0)
         {
-        printf("\n|    Acnol  acne gel\t|     25.300       |    %d\t\t|  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
+        printf("\n|    Acnol  acne gel\t|       25.300       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
         }
                 if (sub.jmlbeli5>0)
         {
-        printf("\n|    Antasida Doen\t|     13.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.antasida,sub.jmlbeli5);
+        printf("\n|    Antasida Doen \t|       13.500       |       %d\t     |  Rp.%d\t\t|",menu_obat.antasida,sub.jmlbeli5);
         }
                 if (sub.jmlbeli6>0)
         {
-        printf("\n|    Aspirin\t\t|     16.800 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.aspirin,sub.jmlbeli6);
+        printf("\n|    Aspirin\t\t|       16.800       |       %d\t     |  Rp.%d\t\t|",menu_obat.aspirin,sub.jmlbeli6);
         }
                 if (sub.jmlbeli7>0)
         {
-        printf("\n|    Betadine Mouthwash\t|     38.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.betadine_mouthwash,sub.jmlbeli7);
+        printf("\n|    Betadine Mouthwash |       38.500       |       %d\t     |  Rp.%d\t\t|",menu_obat.betadine_mouthwash,sub.jmlbeli7);
         }
                 if (sub.jmlbeli8>0)
         {
-        printf("\n|    Benzolac - CL\t|     35.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.benzolac,sub.jmlbeli8);
+        printf("\n|    Benzolac - CL\t|       35.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.benzolac,sub.jmlbeli8);
         }
                 if (sub.jmlbeli9>0)
         {
-        printf("\n|    Bodrex\t\t\t|     4.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.bodrex,sub.jmlbeli9);
+        printf("\n|    Bodrex\t\t|       4.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.bodrex,sub.jmlbeli9);
         }
                 if (sub.jmlbeli10>0)
         {
-        printf("\n|    Cataflam\t\t\t|     9.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cataflam,sub.jmlbeli10);
+        printf("\n|    Cataflam\t\t|       9.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.cataflam,sub.jmlbeli10);
         }
                 if (sub.jmlbeli11>0)
         {
-        printf("\n|    Camaag Mint\t|     71.820  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.camaag_mint,sub.jmlbeli11);
+        printf("\n|    Camaag Mint\t|      71.820        |       %d\t     |  Rp.%d\t\t|",menu_obat.camaag_mint,sub.jmlbeli11);
         }
                 if (sub.jmlbeli12>0)
         {
-        printf("\n|    Cooling 5 Plus\t|  45.332  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling1,sub.jmlbeli12);
+        printf("\n|    Cooling 5 Plus\t|      45.332        |       %d\t     |  Rp.%d\t\t|",menu_obat.cooling1,sub.jmlbeli12);
         }
                 if (sub.jmlbeli13>0)
         {
-        printf("\n|    Cooling 5 Spray\t|  36.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling2,sub.jmlbeli13);
+        printf("\n|    Cooling 5 Spray\t|      36.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.cooling2,sub.jmlbeli13);
         }
                 if (sub.jmlbeli14>0)
         {
-        printf("\n|    Degirol\t\t\t|  14.500  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.degirol,sub.jmlbeli14);
+        printf("\n|    Degirol\t\t|      14.500        |       %d\t     |  Rp.%d\t\t|",menu_obat.degirol,sub.jmlbeli14);
         }
                 if (sub.jmlbeli15>0)
         {
-        printf("\n|    Dentasol\t\t\t|  25.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.dentasol,sub.jmlbeli15);
+        printf("\n|    Dentasol\t\t|      25.000        |      %d\t     |  Rp.%d\t\t|",menu_obat.dentasol,sub.jmlbeli15);
         }
                 if (sub.jmlbeli16>0)
         {
-        printf("\n|   Derma Angel\t|  45.300 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.derma,sub.jmlbeli16);
+        printf("\n|   Derma Angel\t|      45.300        |    %d\t        |  Rp.%d\t\t|",menu_obat.derma,sub.jmlbeli16);
         }
                 if (sub.jmlbeli17>0)
         {
