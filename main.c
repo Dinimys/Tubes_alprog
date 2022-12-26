@@ -6,7 +6,7 @@
 time_t ambil_waktu;
 
 
-int regislogin;					    //variabel dalam fungsi registrasi
+int regislogin;			            //variabel dalam fungsi registrasi
 
 	typedef struct user{		   //variabel dalam fungsi registrasi dan login
         char namalengkap [50];
@@ -83,7 +83,7 @@ void reset_data(){
         menu_obat.acetaminophen = 0; menu_obat.acnes              = 0; menu_obat.acnol1     = 0; menu_obat.acnol2       = 0; menu_obat.antasida = 0;
         menu_obat.aspirin       = 0; menu_obat.betadine_mouthwash = 0; menu_obat.benzolac   = 0; menu_obat.bodrex       = 0; menu_obat.cataflam = 0;
         menu_obat.camaag_mint   = 0; menu_obat.cooling1           = 0; menu_obat.cooling2   = 0; menu_obat.degirol      = 0; menu_obat.dentasol = 0;
-        menu_obat.derma         = 0; menu_obat.efisol             = 0; menu_obat.erha       = 0; menu_obat.eugenia      = 0;  menu_obat.troches = 0;  menu_obat.gumafixa    = 0;
+        menu_obat.derma         = 0; menu_obat.efisol             = 0; menu_obat.erha       = 0; menu_obat.eugenia      = 0; menu_obat.troches  = 0;  menu_obat.gumafixa    = 0;
         menu_obat.gastran       = 0; menu_obat.hexadol            = 0; menu_obat.ibuprofen  = 0; menu_obat.indomethacin = 0; menu_obat.inza     = 0;
         menu_obat.ketorolac     = 0; menu_obat.konidin            = 0; menu_obat.laserin    = 0; menu_obat.medi_klin    = 0; menu_obat.mylanta  = 0;
         menu_obat.naproxen      = 0; menu_obat.neozep             = 0; menu_obat.nutrimax   = 0; menu_obat.obh1         = 0; menu_obat.obh2     = 0; menu_obat.omeprazole   = 0;
@@ -466,7 +466,7 @@ void jenis_penyakit(){
                         break;
                         case 88:
                                 system("cls");  //cls untuk membuat layar menjadi kosong
-                                goto o1;  //me-reset pilihan user
+                                goto o1;       //me-reset pilihan user
                         break;
                         case 00:
                         peyakinan:
@@ -870,7 +870,7 @@ void jenis_penyakit(){
                 break;
                 case 88:
                         system("cls");  //cls untuk membuat layar menjadi kosong
-                        goto o4;  //me-reset pilihan user
+                        goto o4;       //me-reset pilihan user
                 break;
                 case 00:
                 peyakinan3:
@@ -879,7 +879,7 @@ void jenis_penyakit(){
                         printf("Input Pilihan \t\t\t\t");
                         scanf("%s",&yakin);
 
-                        if (yakin=='Y'||yakin=='y') //user yakin untuk menutup program
+                        if (yakin=='Y'||yakin=='y')        //user yakin untuk menutup program
                         {
                                 system("cls");
                                 printf("\t\t- Terima Kasih atas kunjungan Anda -\n\n");
