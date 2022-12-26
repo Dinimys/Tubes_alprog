@@ -19,7 +19,7 @@ int regislogin;			            //variabel dalam fungsi registrasi
 	char inputusername [20];	 //variabel dalam fungsi login
 	char inputpassword [20];
 	//AKUN YANG BISA DIGUNAKAN UNTUK LOGIN
-	char username[20] = "admin";
+	char username[20] = "akun";
 	char password[20] = "00000";
 
 //Deklarasi struct
@@ -52,6 +52,7 @@ int regislogin;			            //variabel dalam fungsi registrasi
 
 void home();            //Tampilan Awal Program
 void registrasi();
+void info();
 void login();
 void terminal();
 void menu();
@@ -100,6 +101,7 @@ void home() {
     printf ("\t\t\t\t|   1   |  Registrasi                            |\n");
     printf ("\t\t\t\t|   2   |  Login                                 |\n");
     printf ("\t\t\t\t|   3   |  Mode Terminal                         |\n");
+    printf ("\t\t\t\t|   4   |  Info Program                          |\n");
     printf ("\t\t\t\t%c   0   |  Keluar                                %c\n",186,186);
     printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
 	printf ("\t\t\t\t>> ");
@@ -119,16 +121,24 @@ void home() {
 		case 3 : {
 		    system("cls");
 		    terminal();
-            break;
-		}
-		case 0 : {
-            exit(0);
-		}
-		default : {
+                        break;
+                }
+                case 4 : {
 		    system("cls");
-            home();
+		    info();
+                    system("pause");
+                    system("cls");
+                    home();
+                        break;
+                }
+                case 0 : {
+                        exit(0);
+                }
+                default : {
+                        system("cls");
+                        home();
 		}
-    }
+        }
 }
 
 void terminal(){
@@ -186,7 +196,7 @@ void registrasi() {	//deklarasi fungsi void
     fflush (stdin);
 
     printf ("\t\t\t\tBuat password : ");
-    scanf ("%s", &Pengguna.password);
+    scanf ("%[^\n]", &Pengguna.password);
     fflush (stdin);
     system ("cls");
 
@@ -235,7 +245,7 @@ void login() {
 		system ("\t\t\t\t\tpause");
 		system ("cls");
                 cetak_login();
-		//loading ();
+		loading ();
 		menu();
 	}
 
@@ -314,6 +324,24 @@ void menu() {
 	}
 }
 
+void info(){
+    printf ("\n\n\t\t\t\t%c%c=============================================================%c%c\n",219,223,223,219);
+    printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<<<<<<<<< INFO PROGRAM >>>>>>>>>>>>>>>>>>>>>>>>%c\n",186,186);
+    printf ("\t\t\t\t|===============================================================|\n");
+    printf ("\t\t\t\t|                 PROGRAM MANAGEMENT PEMBELIAN OBAT             |\n");
+    printf ("\t\t\t\t|                       DI APOTEK JAYA ABADI                    |\n");
+    printf ("\t\t\t\t|===============================================================|\n");
+    printf ("\t\t\t\t|                     PROGRAM INI DIBUAT OLEH                   |\n");
+    printf ("\t\t\t\t|                           KELOMPOK 17                         |\n");
+    printf ("\t\t\t\t|---------------------------------------------------------------|\n");
+    printf ("\t\t\t\t|               NAMA              |             NIM             |\n");
+    printf ("\t\t\t\t|---------------------------------------------------------------|\n");
+    printf ("\t\t\t\t|[1] LAURENSIA DINI MARYS HARYANTO|          2205551028         |\n");
+    printf ("\t\t\t\t|[2] NI PUTU SRI INDAH DAMAYANTI  |          2205551037         |\n");
+    printf ("\t\t\t\t%c[3] ALFREDO FELIX MARUBA         |          2205551038         %c\n", 186,186);
+    printf ("\t\t\t\t%c%c=============================================================%c%c\n",219,220,220,219);
+}
+
 
 void jenis_penyakit(){
     int penyakit, obat;
@@ -334,8 +362,8 @@ void jenis_penyakit(){
     printf ("\t\t\t\t|   6   |  Sakit Maag                            |\n");
     printf ("\t\t\t\t%c   0   |  Back                                  %c\n",186,186    );
     printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
-	printf ("\t\t\t\t>> ");
-	scanf("%d", &penyakit);
+    printf ("\t\t\t\t>> ");
+    scanf("%d", &penyakit);
 
 	switch (penyakit){
         case 0:
@@ -346,7 +374,7 @@ void jenis_penyakit(){
             system("cls");
             printf("\t%c%c==========================================================================================================%c%c\n",219,223,223,219);
             printf("\t|No.| Nama Obat \t| Harga      |        \t\t|No.| Nama Obat\t\t\t         |   Harga   |\n");
-            printf("\t|----------------------------------------------------------------------------------------------------------------|\n");
+            printf("\t|------------------------------------------------------------------------------------------------------------|\n");
             printf("\t| 1.| Aspirin\t\t|  Rp.16.800 |\t\t");
             printf("\t| 5.| Naproxen\t\t\t\t | Rp.335.000| \n");
             printf("\t| 2.| Ibuprofen\t\t|  Rp.7.900  |\t\t");
@@ -1211,7 +1239,7 @@ void pembelian_obat(){
     printf("|31.| Mylanta\t\t|  Rp.18.500 |\n");
     printf("\n====================================================================");
     printf("\n ");
-    printf("\n99. Struk Pembayaran\n88. Reset pilihan\n00.  Keluar\n");
+    printf("\n99. Struk Pembayaran\n88. Reset pilihan\n00. Keluar\n66. Back\n");
     printf("===============================================\n");
 
     for (menuo.menuobat!=0;menuo.menuobat!=99;){
@@ -1709,7 +1737,9 @@ void pembelian_obat(){
             printf("\n===============================================\n");
             sub.jmlbeli61=menu_obat.minyak *46000;
             break;
-
+    case 66:
+            menu();
+            system("cls");
     break;
     case 99:
             Penghitungan();  //memanggil fungsi penghitungan
@@ -1858,25 +1888,25 @@ void struk()
         printf("=======================================================================================\n");
         printf("|                                STRUK PEMBAYARAN                                     |\n");
         printf("|                                APOTEK JAYA ABADI                                    |\n");
-        printf("| Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361    |\n");
+        printf("|  Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361   |\n");
         printf("|_____________________________________________________________________________________|\n");
-        printf("|    Nama Obat  \t| Harga Satuan  | Jumlah  | \t    Total  \t|\n");
-        printf("|=======================|===============|=========|=====================|\n");
+        printf("|    Nama Obat          |    Harga Satuan    |    Jumlah     |         Total          |\n");
+        printf("|=======================|====================|===============|========================|");
         if (sub.jmlbeli1>0)
         {
-        printf("|    Acetaminophen \t|     5.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
+        printf("\n|    Acetaminophen \t|        5.200       |       %d\t\t|  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
         }
                 if (sub.jmlbeli2>0)
         {
-        printf("\n|  Acnes Sealing Jell\t|     29.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
+        printf("\n|  Acnes Sealing Jell\t|       29.000       |       %d\t\t|  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
         }
                 if (sub.jmlbeli3>0)
         {
-        printf("\n|    Acnol Lotion\t|     15.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
+        printf("\n|    Acnol Lotion  \t|       15.000       |    %d\t\t|  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
         }
                 if (sub.jmlbeli4>0)
         {
-        printf("\n|    Acnol  acne gel\t|     25.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
+        printf("\n|    Acnol  acne gel\t|     25.300       |    %d\t\t|  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
         }
                 if (sub.jmlbeli5>0)
         {
@@ -2109,16 +2139,16 @@ void struk()
 
 
 
-        printf("\n|____________________________________________________________________________________________|");
+        printf("\n|_____________________________________________________________________________________|");
         printf("\n| Total Keseluruhan = %d\t\t\t\t\t\t|", sub.totalharga);
         printf("\n| Uang bayar        = %d\t\t\t\t\t\t|", sub.bayar);
         printf("\n| Kembalian         = %d\t\t\t\t\t\t|", sub.kembalian);
-        printf("\n|                                                               |");
-        printf("\n|                                                               |");
+        printf("\n|                                                                                     |");
+        printf("\n|                                                                                     |");
         printf("\n| Waktu/Hari : %s|", ctime (&ambil_waktu));
-        printf("\n|Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t\t|");
-        printf("\n|                                                                                          |\n");
-        printf("----------------------------------------------------------------------------------------------\n");
+        printf("\n|Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t\t\t  |");
+        printf("\n|                                                                                     |\n");
+        printf("---------------------------------------------------------------------------------------\n");
 
         cetak_struk();
         reset_data();
@@ -2130,12 +2160,12 @@ void cetak_struk()
         FILE *in = fopen ("struk_pembelian_obat.txt", "a+");
         time(&ambil_waktu); //mengambil waktu saat ini
         fprintf(in,"=======================================================================================\n");
-        fprintf(in,"| \t\t\t                STRUK PEMBAYARAN                                       \t|\n");
-        fprintf(in,"| \t\t                    APOTEK JAYA ABADI                                    \t\t|\n");
+        fprintf(in,"| \t\t\t                STRUK PEMBAYARAN                                       \t  |\n");
+        fprintf(in,"| \t\t                    APOTEK JAYA ABADI                                    \t  |\n");
         fprintf(in,"| \tJalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |\n");
-        fprintf(in,"|_______________________________________________________________|\n");
-        fprintf(in,"|    Nama Obat  \t| Harga Satuan  | Jumlah  | \t    Total  \t|\n");
-        fprintf(in,"|=======================|===============|=========|=====================|\n");
+        fprintf(in,"|_____________________________________________________________________________________|\n");
+        fprintf(in,"|    Nama Obat  \t   | Harga Satuan  | Jumlah  | \t    Total  \t|\n");
+        fprintf(in,"|=======================|===============|=========|===================================|");
         if (sub.jmlbeli1>0)
         {
         fprintf(in,"|    Acetaminophen \t|     5.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
@@ -2383,15 +2413,15 @@ void cetak_struk()
 
 
 
-        fprintf(in,"\n|_______________________________________________________________|");
-        fprintf(in,"\n| Total Keseluruhan = %d\t\t\t\t\t|", sub.totalharga);
-        fprintf(in,"\n| Uang bayar        = %d\t\t\t\t\t|", sub.bayar);
-        fprintf(in,"\n| Kembalian         = %d\t\t\t\t\t|", sub.kembalian);
-        fprintf(in,"\n|                                                               |");
-        fprintf(in,"\n|                                                               |");
+        fprintf(in,"\n|_____________________________________________________________________________________|");
+        fprintf(in,"\n| Total Keseluruhan = %d\t\t\t\t\t\t\t\t\t\t\t\t\t|", sub.totalharga);
+        fprintf(in,"\n| Uang bayar        = %d\t\t\t\t\t\t\t\t\t\t\t\t\t|", sub.bayar);
+        fprintf(in,"\n| Kembalian         = %d\t\t\t\t\t\t\t\t\t\t\t\t\t|", sub.kembalian);
+        fprintf(in,"\n|                                                                                    |");
+        fprintf(in,"\n|                                                                                    |");
         fprintf(in,"\n| Waktu/Hari : %s|", ctime (&ambil_waktu));
-        fprintf(in,"| Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t|");
-        fprintf(in,"\n|                                                               |\n");
-        fprintf(in,"-----------------------------------------------------------------\n\n\n");
+        fprintf(in,"\n|Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t|");
+        fprintf(in,"\n|                                                                                    |\n");
+        fprintf(in,"-------------------------------------------------------------------------------------\n\n\n");
     fclose(in);
     }
