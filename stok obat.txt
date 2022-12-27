@@ -1,0 +1,35 @@
+------------------------------
+|          STOK OBAT         |
+------------------------------
+acetaminophen
+>> 7
+------------------------------
+|          STOK OBAT         |
+------------------------------
+acetaminophen
+>> 2
+acnes
+>> 10
+acnol1
+>> 10
+acnol2
+>> 13
+antasida
+>> 7
+aspirin
+>> 7
+------------------------------
+|          STOK OBAT         |
+------------------------------
+acetaminophen
+>> -6
+acnes
+>> 10
+acnol1
+>> 10
+acnol2
+>> 13
+antasida
+>> 7
+aspirin
+>> 7
