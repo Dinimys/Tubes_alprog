@@ -2180,7 +2180,7 @@ void cetak_struk()
         }
                 if (sub.jmlbeli4>0)
         {
-        fprintf(in,"\n|    Acnol  acne gel\t|     25.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
+        fprintf(in,"\n|    Acnol  acne gel\t|      25.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
         }
                 if (sub.jmlbeli5>0)
         {
