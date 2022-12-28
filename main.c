@@ -19,7 +19,7 @@ int regislogin;			            //variabel dalam fungsi registrasi
 	char inputusername [20];	 //variabel dalam fungsi login
 	char inputpassword [20];
 	//AKUN YANG BISA DIGUNAKAN UNTUK LOGIN
-	char username[20] = "akun";
+	char username[20] = "admin";
 	char password[20] = "00000";
 
 //Deklarasi struct
@@ -141,11 +141,69 @@ void set_obat(){ //PEMBERIAN JUMLAH STOK OBAT
 
 void stok_barang(){
 
-        jmlh.acetaminophen = jmlh.acetaminophen + menu_obat.acetaminophen;
-        jmlh.acnes         = jmlh.acnes         + menu_obat.acnes;
-        jmlh.acnol1        = jmlh.acnol1        + menu_obat.acnol1;
-        jmlh.acnol2        = jmlh.acnol2        + menu_obat.acnol2;
-
+        jmlh.acetaminophen 		= jmlh.acetaminophen      + menu_obat.acetaminophen;
+        jmlh.acnes         		= jmlh.acnes              + menu_obat.acnes;
+        jmlh.acnol1       		= jmlh.acnol1             + menu_obat.acnol1;
+        jmlh.acnol2       		= jmlh.acnol2             + menu_obat.acnol2;
+        jmlh.antasida      		= jmlh.antasida      	  + menu_obat.antasida;
+        jmlh.aspirin       		= jmlh.aspirin      	  + menu_obat.aspirin;
+        jmlh.betadine_mouthwash = jmlh.betadine_mouthwash + menu_obat.betadine_mouthwash;
+        jmlh.benzolac     		= jmlh.benzolac     	  + menu_obat.benzolac;
+        jmlh.bodrex       		= jmlh.bodrex	      	  + menu_obat.bodrex;
+        jmlh.cataflam      		= jmlh.cataflam      	  + menu_obat.cataflam;
+        jmlh.camaag_mint     	= jmlh.camaag_mint        + menu_obat.camaag_mint;
+        jmlh.cooling1        	= jmlh.cooling1           + menu_obat.cooling1;
+        jmlh.cooling2       	= jmlh.cooling2           + menu_obat.cooling2;
+        jmlh.degirol	    	= jmlh.degirol		      + menu_obat.degirol;
+        jmlh.dentasol	    	= jmlh.dentasol		      + menu_obat.dentasol;
+		jmlh.derma		    	= jmlh.derma		      + menu_obat.derma;
+		jmlh.efisol		    	= jmlh.efisol		      + menu_obat.efisol;
+        jmlh.erha		    	= jmlh.erha 		      + menu_obat.erha;
+        jmlh.eugenia	    	= jmlh.eugenia		      + menu_obat.eugenia;
+        jmlh.troches	    	= jmlh.troches		      + menu_obat.troches;
+        jmlh.gumafixa	    	= jmlh.gumafixa		      + menu_obat.gumafixa;
+        jmlh.gastran	    	= jmlh.gastran		      + menu_obat.gastran;
+        jmlh.hexadol	    	= jmlh.hexadol		      + menu_obat.hexadol;
+        jmlh.ibuprofen	    	= jmlh.ibuprofen	      + menu_obat.ibuprofen;
+        jmlh.indomethacin	   	= jmlh.indomethacin		  + menu_obat.indomethacin;
+        jmlh.inza		    	= jmlh.inza			      + menu_obat.inza;
+        jmlh.ketorolac	    	= jmlh.ketorolac	      + menu_obat.ketorolac;
+        jmlh.konidin	    	= jmlh.konidin		      + menu_obat.konidin;
+        jmlh.laserin	    	= jmlh.laserin		      + menu_obat.laserin;
+        jmlh.medi_klin	    	= jmlh.medi_klin		  + menu_obat.medi_klin;
+        jmlh.mylanta	    	= jmlh.mylanta		      + menu_obat.mylanta;
+        jmlh.naproxen	    	= jmlh.naproxen		      + menu_obat.naproxen;
+        jmlh.neozep		    	= jmlh.neozep		      + menu_obat.neozep;
+        jmlh.nutrimax	    	= jmlh.nutrimax		      + menu_obat.nutrimax;
+        jmlh.obh1		    	= jmlh.obh1			      + menu_obat.obh1;
+        jmlh.obh2		    	= jmlh.obh2			      + menu_obat.obh2;
+        jmlh.omeprazole	    	= jmlh.omeprazole		  + menu_obat.omeprazole;
+        jmlh.oskadon	    	= jmlh.oskadon		      + menu_obat.oskadon;
+        jmlh.paramex	    	= jmlh.paramex		      + menu_obat.paramex;
+        jmlh.polycrol	    	= jmlh.polycrol		      + menu_obat.polycrol;
+        jmlh.polysilane	    	= jmlh.polysilane		  + menu_obat.polysilane;
+        jmlh.ponstan		  	= jmlh.ponstan		      + menu_obat.ponstan;
+        jmlh.procold	    	= jmlh.procold		      + menu_obat.procold;
+        jmlh.promag		    	= jmlh.promag		      + menu_obat.promag;
+        jmlh.ranitidine	    	= jmlh.ranitidine		  + menu_obat.ranitidine;
+        jmlh.sanmol		    	= jmlh.sanmol		      + menu_obat.sanmol;
+        jmlh.siladex	    	= jmlh.siladex		      + menu_obat.siladex;
+        jmlh.sp			    	= jmlh.sp			      + menu_obat.sp;
+        jmlh.sumagesic	    	= jmlh.sumagesic	      + menu_obat.sumagesic;
+        jmlh.tantum		    	= jmlh.tantum		      + menu_obat.tantum;
+        jmlh.ultraflu	    	= jmlh.ultraflu		      + menu_obat.ultraflu;
+        jmlh.vicks		    	= jmlh.vicks		      + menu_obat.vicks;
+        jmlh.verile		    	= jmlh.verile		      + menu_obat.verile;
+        jmlh.vitacid	    	= jmlh.vitacid		      + menu_obat.vitacid;
+        jmlh.waisan		    	= jmlh.waisan		      + menu_obat.waisan;
+        jmlh.kasa		    	= jmlh.kasa			      + menu_obat.kasa;
+        jmlh.hansaplast		   	= jmlh.hansaplast		  + menu_obat.hansaplast;
+        jmlh.kapas		    	= jmlh.kapas		      + menu_obat.kapas;
+        jmlh.infus		    	= jmlh.infus		      + menu_obat.infus;
+        jmlh.betadine	    	= jmlh.betadine		      + menu_obat.betadine;
+        jmlh.minyak		    	= jmlh.minyak		      + menu_obat.minyak;
+    
+        
         
         if(jmlh.acetaminophen > stok_obat.acetaminophen){
                 printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
@@ -243,24 +301,341 @@ void stok_barang(){
                 printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
                 menu_obat.derma = 0; sub.jmlbeli16  = 0;
         }
-
-        stok_obat.acetaminophen = stok_obat.acetaminophen - jmlh.acetaminophen;
-        stok_obat.acnes         = stok_obat.acnes         - jmlh.acnes;
-        stok_obat.acnol1        = stok_obat.acnol1        - jmlh.acnol1;
-        stok_obat.acnol2        = stok_obat.acnol2        - jmlh.acnol2;
-        stok_obat.antasida      = stok_obat.antasida      - jmlh.antasida;
-        stok_obat.aspirin       = stok_obat.aspirin       - jmlh.aspirin;
+ 		if(jmlh.efisol > stok_obat.efisol){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.efisol = 0; sub.jmlbeli17  = 0;
+        }
+  		if(jmlh.erha > stok_obat.erha){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.erha = 0; sub.jmlbeli18  = 0;
+        }
+        if(jmlh.eugenia > stok_obat.eugenia){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.eugenia = 0; sub.jmlbeli19  = 0;
+        }
+  		if(jmlh.troches > stok_obat.troches){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.troches = 0; sub.jmlbeli20  = 0;
+        }
+  		if(jmlh.gumafixa > stok_obat.gumafixa){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.gumafixa = 0; sub.jmlbeli21  = 0;
+        }
+  		if(jmlh.gastran > stok_obat.gastran){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.gastran = 0; sub.jmlbeli22  = 0;
+        }
+  		if(jmlh.hexadol > stok_obat.hexadol){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.hexadol = 0; sub.jmlbeli23  = 0;
+        }
+        if(jmlh.ibuprofen > stok_obat.ibuprofen){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.ibuprofen = 0; sub.jmlbeli24  = 0;
+        }
+  		if(jmlh.indomethacin > stok_obat.indomethacin){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.indomethacin = 0; sub.jmlbeli25  = 0;
+        }
+        if(jmlh.inza > stok_obat.inza){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.inza = 0; sub.jmlbeli26  = 0;
+        }
+        if(jmlh.ketorolac > stok_obat.ketorolac){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.ketorolac = 0; sub.jmlbeli27  = 0;
+        }
+        if(jmlh.konidin > stok_obat.konidin){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.konidin = 0; sub.jmlbeli28  = 0;
+        }
+        if(jmlh.laserin > stok_obat.laserin){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.laserin = 0; sub.jmlbeli29  = 0;
+        }
+        if(jmlh.medi_klin > stok_obat.medi_klin){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.medi_klin = 0; sub.jmlbeli30  = 0;
+        }
+        if(jmlh.mylanta > stok_obat.mylanta){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.mylanta = 0; sub.jmlbeli31  = 0;
+        }
+        if(jmlh.naproxen > stok_obat.naproxen){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.naproxen = 0; sub.jmlbeli32  = 0;
+        }
+        if(jmlh.neozep > stok_obat.neozep){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.neozep = 0; sub.jmlbeli33  = 0;
+        }
+        if(jmlh.nutrimax > stok_obat.nutrimax){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.obh1 = 0; sub.jmlbeli34  = 0;
+        }
+        if(jmlh.obh1 > stok_obat.obh1){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.obh1 = 0; sub.jmlbeli35  = 0;
+        }
+        if(jmlh.obh2 > stok_obat.obh2){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.omeprazole = 0; sub.jmlbeli36  = 0;
+        }
+        if(jmlh.omeprazole > stok_obat.omeprazole){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.omeprazole = 0; sub.jmlbeli37  = 0;
+        }
+        if(jmlh.oskadon > stok_obat.oskadon){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.oskadon = 0; sub.jmlbeli38  = 0;
+        }
+        if(jmlh.paramex > stok_obat.paramex){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.paramex = 0; sub.jmlbeli39  = 0;
+        }
+        if(jmlh.polycrol > stok_obat.polycrol){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.polycrol = 0; sub.jmlbeli40  = 0;
+        }
+    	if(jmlh.polysilane > stok_obat.polysilane){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.polysilane = 0; sub.jmlbeli41  = 0;
+        }
+        if(jmlh.ponstan > stok_obat.ponstan){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.ponstan = 0; sub.jmlbeli42  = 0;
+        }
+        if(jmlh.procold > stok_obat.procold){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.procold = 0; sub.jmlbeli43  = 0;
+        }
+        if(jmlh.promag > stok_obat.promag){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.promag = 0; sub.jmlbeli44  = 0;
+        }
+        if(jmlh.ranitidine > stok_obat.ranitidine){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.ranitidine = 0; sub.jmlbeli45  = 0;
+        }
+        if(jmlh.sanmol > stok_obat.sanmol){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.siladex = 0; sub.jmlbeli46  = 0;
+        }
+        if(jmlh.siladex > stok_obat.siladex){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.siladex = 0; sub.jmlbeli47  = 0;
+        }
+        if(jmlh.sp > stok_obat.sp){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.sp = 0; sub.jmlbeli48  = 0;
+        }
+        if(jmlh.sumagesic > stok_obat.sumagesic){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.sumagesic = 0; sub.jmlbeli49  = 0;
+        }
+     	if(jmlh.tantum > stok_obat.tantum){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.tantum = 0; sub.jmlbeli50  = 0;
+        }
+    	if(jmlh.ultraflu > stok_obat.ultraflu){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.ultraflu = 0; sub.jmlbeli51  = 0;
+        }
+       if(jmlh.vicks > stok_obat.vicks){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.vicks = 0; sub.jmlbeli52  = 0;
+        }
+      	if(jmlh.verile > stok_obat.verile){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.verile = 0; sub.jmlbeli53  = 0;
+        }
+        if(jmlh.vitacid > stok_obat.vitacid){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.vitacid = 0; sub.jmlbeli54  = 0;
+        }
+       if(jmlh.waisan > stok_obat.waisan){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.waisan = 0; sub.jmlbeli55  = 0;
+        }
+        if(jmlh.kasa > stok_obat.kasa){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.kasa = 0; sub.jmlbeli56  = 0;
+        }
+       if(jmlh.hansaplast > stok_obat.hansaplast){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.hansaplast = 0; sub.jmlbeli57  = 0;
+        }
+        if(jmlh.kapas > stok_obat.kapas){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.kapas = 0; sub.jmlbeli58  = 0;
+        }
+      	if(jmlh.infus > stok_obat.infus){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.infus = 0; sub.jmlbeli59  = 0;
+        }
+        if(jmlh.betadine > stok_obat.betadine){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.betadine = 0; sub.jmlbeli60  = 0;
+        }
+        if(jmlh.minyak > stok_obat.minyak){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.minyak = 0; sub.jmlbeli61  = 0;
+        }
+        
+        
+        
+        
+        stok_obat.acetaminophen 	 = stok_obat.acetaminophen 		- jmlh.acetaminophen;
+        stok_obat.acnes        		 = stok_obat.acnes         		- jmlh.acnes;
+        stok_obat.acnol1           	 = stok_obat.acnol1        		- jmlh.acnol1;
+        stok_obat.acnol2      		 = stok_obat.acnol2        		- jmlh.acnol2;
+        stok_obat.antasida     		 = stok_obat.antasida      		- jmlh.antasida;
+        stok_obat.aspirin     		 = stok_obat.aspirin       		- jmlh.aspirin;
         stok_obat.betadine_mouthwash = stok_obat.betadine_mouthwash - jmlh.betadine_mouthwash;
-        stok_obat.benzolac      = stok_obat.benzolac      - jmlh.benzolac;
-        stok_obat.bodrex        = stok_obat.bodrex        - jmlh.bodrex;
-        stok_obat.cataflam      = stok_obat.cataflam      - jmlh.cataflam;
-        stok_obat.camaag_mint   = stok_obat.camaag_mint   - jmlh.camaag_mint;
-        stok_obat.cooling1      = stok_obat.cooling1      - jmlh.cooling1;
-        stok_obat.cooling2      = stok_obat.cooling2      - jmlh.cooling2;
-        stok_obat.degirol       = stok_obat.degirol       - jmlh.degirol;
-        stok_obat.dentasol      = stok_obat.dentasol      - jmlh.dentasol;
-        stok_obat.derma         = stok_obat.derma         - jmlh.derma;
-
+        stok_obat.benzolac      	 = stok_obat.benzolac      		- jmlh.benzolac;
+        stok_obat.bodrex             = stok_obat.bodrex        		- jmlh.bodrex;
+        stok_obat.cataflam      	 = stok_obat.cataflam      		- jmlh.cataflam;
+        stok_obat.camaag_mint   	 = stok_obat.camaag_mint   		- jmlh.camaag_mint;
+        stok_obat.cooling1      	 = stok_obat.cooling1      		- jmlh.cooling1;
+        stok_obat.cooling2      	 = stok_obat.cooling2      		- jmlh.cooling2;
+        stok_obat.degirol            = stok_obat.degirol       		- jmlh.degirol;
+        stok_obat.dentasol     		 = stok_obat.dentasol      		- jmlh.dentasol;
+        stok_obat.derma         	 = stok_obat.derma         		- jmlh.derma;
+ 		stok_obat.efisol         	 = stok_obat.efisol         	- jmlh.efisol;
+ 		stok_obat.erha	         	 = stok_obat.erha         		- jmlh.erha;
+ 		stok_obat.eugenia         	 = stok_obat.eugenia         	- jmlh.eugenia;
+ 		stok_obat.troches         	 = stok_obat.troches         	- jmlh.troches;
+ 		stok_obat.gumafixa         	 = stok_obat.gumafixa      		- jmlh.gumafixa;
+ 		stok_obat.gastran         	 = stok_obat.gastran         	- jmlh.gastran;
+ 		stok_obat.hexadol         	 = stok_obat.hexadol         	- jmlh.hexadol;
+ 		stok_obat.ibuprofen        	 = stok_obat.ibuprofen         	- jmlh.ibuprofen;
+ 		stok_obat.indomethacin       = stok_obat.indomethacin      	- jmlh.indomethacin;
+ 		stok_obat.inza	         	 = stok_obat.inza         		- jmlh.inza;
+ 		stok_obat.ketorolac        	 = stok_obat.ketorolac         	- jmlh.ketorolac;
+ 		stok_obat.konidin         	 = stok_obat.konidin         	- jmlh.konidin;
+ 		stok_obat.laserin         	 = stok_obat.laserin         	- jmlh.laserin;
+ 		stok_obat.medi_klin        	 = stok_obat.medi_klin         	- jmlh.medi_klin;
+ 		stok_obat.mylanta         	 = stok_obat.mylanta       		- jmlh.mylanta;
+ 		stok_obat.naproxen        	 = stok_obat.naproxen         	- jmlh.naproxen;
+ 		stok_obat.neozep         	 = stok_obat.neozep         	- jmlh.neozep;
+ 		stok_obat.nutrimax         	 = stok_obat.nutrimax         	- jmlh.nutrimax;
+ 		stok_obat.obh1	         	 = stok_obat.obh1         		- jmlh.obh1;
+ 		stok_obat.obh2	         	 = stok_obat.obh2         		- jmlh.obh2;
+ 		stok_obat.omeprazole       	 = stok_obat.omeprazole   		- jmlh.omeprazole;
+ 		stok_obat.oskadon         	 = stok_obat.oskadon         	- jmlh.oskadon;
+		stok_obat.paramex         	 = stok_obat.paramex         	- jmlh.paramex;
+ 		stok_obat.polycrol         	 = stok_obat.polycrol         	- jmlh.polycrol;
+ 		stok_obat.polysilane       	 = stok_obat.polysilane    		- jmlh.polysilane;
+ 		stok_obat.ponstan         	 = stok_obat.ponstan         	- jmlh.ponstan;
+ 		stok_obat.procold         	 = stok_obat.procold         	- jmlh.procold;
+ 		stok_obat.promag         	 = stok_obat.promag         	- jmlh.promag;
+ 		stok_obat.ranitidine       	 = stok_obat.ranitidine    		- jmlh.ranitidine;
+ 		stok_obat.sanmol         	 = stok_obat.sanmol        		- jmlh.sanmol;
+ 		stok_obat.siladex         	 = stok_obat.siladex       		- jmlh.siladex;
+ 		stok_obat.sp	         	 = stok_obat.sp         		- jmlh.sp;
+ 		stok_obat.sumagesic        	 = stok_obat.sumagesic     		- jmlh.sumagesic;
+ 		stok_obat.tantum         	 = stok_obat.tantum        		- jmlh.tantum;
+ 		stok_obat.ultraflu         	 = stok_obat.ultraflu       		- jmlh.ultraflu;
+ 		stok_obat.vicks         	 = stok_obat.vicks         		- jmlh.vicks;
+ 		stok_obat.verile         	 = stok_obat.verile        		- jmlh.verile;
+ 		stok_obat.vitacid         	 = stok_obat.vitacid       		- jmlh.vitacid;
+ 		stok_obat.waisan         	 = stok_obat.waisan        		- jmlh.waisan;
+ 		stok_obat.kasa	         	 = stok_obat.kasa         		- jmlh.kasa;
+ 		stok_obat.hansaplast       	 = stok_obat.hansaplast    		- jmlh.hansaplast;
+ 		stok_obat.kapas         	 = stok_obat.kapas         		- jmlh.kapas;
+ 		stok_obat.infus         	 = stok_obat.infus          	- jmlh.infus;
+ 		stok_obat.betadine         	 = stok_obat.betadine      		- jmlh.betadine;
+ 		stok_obat.minyak         	 = stok_obat.minyak        		- jmlh.minyak;
 
 }
 
