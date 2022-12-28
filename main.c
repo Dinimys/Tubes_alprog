@@ -23,11 +23,11 @@ int regislogin;			            //variabel dalam fungsi registrasi
 	char password[20] = "00000";
 
 //Deklarasi struct
-    struct macammenu
+    struct macammenu  //VARIABEL UNTUK PERULANGAN DALAM PEMBELIAN OBAT
     {
         int menuobat, menuobat1, menuobat2, menuobat3, menuobat4, menuobat5, menuobat6;
     };
-    struct subtotal
+    struct subtotal  //MENAMPUNG TOTAL HARGA OBAT YANG BAKAL DIBELI
     {
         int jmlbeli1,jmlbeli2,jmlbeli3,jmlbeli4,jmlbeli5,jmlbeli6,jmlbeli7,jmlbeli8,jmlbeli9,jmlbeli10,jmlbeli11,
         jmlbeli12,jmlbeli13,jmlbeli14,jmlbeli15,jmlbeli16,jmlbeli17,jmlbeli18,jmlbeli19,jmlbeli20,jmlbeli21,jmlbeli22,
@@ -37,7 +37,7 @@ int regislogin;			            //variabel dalam fungsi registrasi
         jmlbeli56,jmlbeli57,jmlbeli58,jmlbeli59,jmlbeli60,jmlbeli61;
         int totalharga, bayar, kembalian;
     };
-    struct menu
+    struct menu //MENAMPUNG PEMBELIAN TIAP OBAT
     {
         int acetaminophen, acnes, acnol1, acnol2, antasida, aspirin, betadine_mouthwash, benzolac, bodrex, cataflam, camaag_mint, cooling1, cooling2,
         degirol, dentasol, derma, efisol, erha, eugenia, troches, gumafixa, gastran, hexadol, ibuprofen, indomethacin, inza, ketorolac, konidin,
@@ -45,6 +45,24 @@ int regislogin;			            //variabel dalam fungsi registrasi
         promag, ranitidine, sanmol, siladex, sp, sumagesic, tantum, ultraflu, vicks, verile, vitacid, waisan, kasa, hansaplast, kapas, infus, betadine, minyak ;
 
     };
+    struct jumlah //MENAMPUNG JUMLAH PEMBELIAN TIAP OBAT
+    {
+        int acetaminophen, acnes, acnol1, acnol2, antasida, aspirin, betadine_mouthwash, benzolac, bodrex, cataflam, camaag_mint, cooling1, cooling2,
+        degirol, dentasol, derma, efisol, erha, eugenia, troches, gumafixa, gastran, hexadol, ibuprofen, indomethacin, inza, ketorolac, konidin,
+        laserin, medi_klin, mylanta, naproxen, neozep, nutrimax, obh1, obh2, omeprazole, oskadon, paramex, polycrol, polysilane, ponstan, procold,
+        promag, ranitidine, sanmol, siladex, sp, sumagesic, tantum, ultraflu, vicks, verile, vitacid, waisan, kasa, hansaplast, kapas, infus, betadine, minyak ;
+
+    };
+    struct stok //STOK OBAT OBATAN
+    {
+        int acetaminophen, acnes, acnol1, acnol2, antasida, aspirin, betadine_mouthwash, benzolac, bodrex, cataflam, camaag_mint, cooling1, cooling2,
+        degirol, dentasol, derma, efisol, erha, eugenia, troches, gumafixa, gastran, hexadol, ibuprofen, indomethacin, inza, ketorolac, konidin,
+        laserin, medi_klin, mylanta, naproxen, neozep, nutrimax, obh1, obh2, omeprazole, oskadon, paramex, polycrol, polysilane, ponstan, procold,
+        promag, ranitidine, sanmol, siladex, sp, sumagesic, tantum, ultraflu, vicks, verile, vitacid, waisan, kasa, hansaplast, kapas, infus, betadine, minyak ;
+
+    };
+    struct stok stok_obat;
+    struct jumlah jmlh;
     struct menu menu_obat;
     struct macammenu menuo;
     struct subtotal sub;
@@ -62,13 +80,21 @@ void Penghitungan();
 void jenis_penyakit();
 void struk();
 void cetak_struk();
+void stok_barang();
+void cetak_stok();
+void set_obat();
 
 
 int main(){
+    set_obat();
     home();
 }
 
 void reset_data(){
+
+        //RESET PEMBELIAN OBAT
+        menuo.menuobat  = 0; menuo.menuobat1 = 0; menuo.menuobat2 = 0; menuo.menuobat3 = 0;
+        menuo.menuobat4 = 0; menuo.menuobat5 = 0; menuo.menuobat6 = 0;
 
         //MERESET HARGA BARANG
         sub.jmlbeli1  = 0; sub.jmlbeli2  = 0; sub.jmlbeli3  = 0; sub.jmlbeli4  = 0; sub.jmlbeli5  = 0; sub.jmlbeli6  = 0; sub.jmlbeli7  = 0; sub.jmlbeli8  = 0; sub.jmlbeli9  = 0; sub.jmlbeli10 = 0;
@@ -79,18 +105,163 @@ void reset_data(){
         sub.jmlbeli51 = 0; sub.jmlbeli52 = 0; sub.jmlbeli53 = 0; sub.jmlbeli54 = 0; sub.jmlbeli55 = 0; sub.jmlbeli56 = 0; sub.jmlbeli57 = 0; sub.jmlbeli58 = 0; sub.jmlbeli59 = 0; sub.jmlbeli60 = 0;
         sub.jmlbeli61 = 0;
 
-        //MERESET STOK BELI
-        menu_obat.acetaminophen = 0; menu_obat.acnes              = 0; menu_obat.acnol1     = 0; menu_obat.acnol2       = 0; menu_obat.antasida = 0;
-        menu_obat.aspirin       = 0; menu_obat.betadine_mouthwash = 0; menu_obat.benzolac   = 0; menu_obat.bodrex       = 0; menu_obat.cataflam = 0;
-        menu_obat.camaag_mint   = 0; menu_obat.cooling1           = 0; menu_obat.cooling2   = 0; menu_obat.degirol      = 0; menu_obat.dentasol = 0;
-        menu_obat.derma         = 0; menu_obat.efisol             = 0; menu_obat.erha       = 0; menu_obat.eugenia      = 0; menu_obat.troches  = 0;  menu_obat.gumafixa    = 0;
-        menu_obat.gastran       = 0; menu_obat.hexadol            = 0; menu_obat.ibuprofen  = 0; menu_obat.indomethacin = 0; menu_obat.inza     = 0;
-        menu_obat.ketorolac     = 0; menu_obat.konidin            = 0; menu_obat.laserin    = 0; menu_obat.medi_klin    = 0; menu_obat.mylanta  = 0;
-        menu_obat.naproxen      = 0; menu_obat.neozep             = 0; menu_obat.nutrimax   = 0; menu_obat.obh1         = 0; menu_obat.obh2     = 0; menu_obat.omeprazole   = 0;
-        menu_obat.oskadon       = 0; menu_obat.paramex            = 0; menu_obat.polycrol   = 0; menu_obat.polysilane   = 0; menu_obat.ponstan  = 0; menu_obat.procold      = 0;
-        menu_obat.promag        = 0; menu_obat.ranitidine         = 0; menu_obat.sanmol     = 0; menu_obat.siladex      = 0; menu_obat.sp       = 0; menu_obat.sumagesic    = 0;
-        menu_obat.tantum        = 0; menu_obat.ultraflu           = 0; menu_obat.vicks      = 0; menu_obat.verile       = 0; menu_obat.vitacid  = 0; menu_obat.waisan       = 0;
-        menu_obat.kasa          = 0; menu_obat.hansaplast         = 0; menu_obat.kapas      = 0; menu_obat.infus        = 0; menu_obat.betadine = 0; menu_obat.minyak       = 0;
+}
+
+void reset_obat(){
+	
+    //MERESET STOK BELI
+    menu_obat.acetaminophen = 0; menu_obat.acnes              = 0; menu_obat.acnol1     = 0; menu_obat.acnol2       = 0; menu_obat.antasida = 0;
+    menu_obat.aspirin       = 0; menu_obat.betadine_mouthwash = 0; menu_obat.benzolac   = 0; menu_obat.bodrex       = 0; menu_obat.cataflam = 0;
+    menu_obat.camaag_mint   = 0; menu_obat.cooling1           = 0; menu_obat.cooling2   = 0; menu_obat.degirol      = 0; menu_obat.dentasol = 0;
+    menu_obat.derma         = 0; menu_obat.efisol             = 0; menu_obat.erha       = 0; menu_obat.eugenia      = 0; menu_obat.troches  = 0;  menu_obat.gumafixa    = 0;
+    menu_obat.gastran       = 0; menu_obat.hexadol            = 0; menu_obat.ibuprofen  = 0; menu_obat.indomethacin = 0; menu_obat.inza     = 0;
+    menu_obat.ketorolac     = 0; menu_obat.konidin            = 0; menu_obat.laserin    = 0; menu_obat.medi_klin    = 0; menu_obat.mylanta  = 0;
+    menu_obat.naproxen      = 0; menu_obat.neozep             = 0; menu_obat.nutrimax   = 0; menu_obat.obh1         = 0; menu_obat.obh2     = 0; menu_obat.omeprazole   = 0;
+    menu_obat.oskadon       = 0; menu_obat.paramex            = 0; menu_obat.polycrol   = 0; menu_obat.polysilane   = 0; menu_obat.ponstan  = 0; menu_obat.procold      = 0;
+    menu_obat.promag        = 0; menu_obat.ranitidine         = 0; menu_obat.sanmol     = 0; menu_obat.siladex      = 0; menu_obat.sp       = 0; menu_obat.sumagesic    = 0;
+    menu_obat.tantum        = 0; menu_obat.ultraflu           = 0; menu_obat.vicks      = 0; menu_obat.verile       = 0; menu_obat.vitacid  = 0; menu_obat.waisan       = 0;
+    menu_obat.kasa          = 0; menu_obat.hansaplast         = 0; menu_obat.kapas      = 0; menu_obat.infus        = 0; menu_obat.betadine = 0; menu_obat.minyak       = 0;
+}
+
+void set_obat(){ //PEMBERIAN JUMLAH STOK OBAT
+
+        stok_obat.acetaminophen = 7; stok_obat.acnes              = 10; stok_obat.acnol1     = 10; stok_obat.acnol2       = 13; stok_obat.antasida = 7;
+        stok_obat.aspirin       = 7; stok_obat.betadine_mouthwash = 10; stok_obat.benzolac   = 10; stok_obat.bodrex       = 13; stok_obat.cataflam = 7;
+        stok_obat.camaag_mint   = 7; stok_obat.cooling1           = 10; stok_obat.cooling2   = 10; stok_obat.degirol      = 13; stok_obat.dentasol = 7;
+        stok_obat.derma         = 7; stok_obat.efisol             = 10; stok_obat.erha       = 10; stok_obat.eugenia      = 13; stok_obat.troches  = 7;  stok_obat.gumafixa    = 5;
+        stok_obat.gastran       = 7; stok_obat.hexadol            = 10; stok_obat.ibuprofen  = 10; stok_obat.indomethacin = 13; stok_obat.inza     = 7;
+        stok_obat.ketorolac     = 7; stok_obat.konidin            = 10; stok_obat.laserin    = 10; stok_obat.medi_klin    = 13; stok_obat.mylanta  = 7;
+        stok_obat.naproxen      = 7; stok_obat.neozep             = 10; stok_obat.nutrimax   = 10; stok_obat.obh1         = 13; stok_obat.obh2     = 7; stok_obat.omeprazole   = 5;
+        stok_obat.oskadon       = 7; stok_obat.paramex            = 10; stok_obat.polycrol   = 10; stok_obat.polysilane   = 13; stok_obat.ponstan  = 7; stok_obat.procold      = 5;
+        stok_obat.promag        = 7; stok_obat.ranitidine         = 10; stok_obat.sanmol     = 10; stok_obat.siladex      = 13; stok_obat.sp       = 7; stok_obat.sumagesic    = 5;
+        stok_obat.tantum        = 7; stok_obat.ultraflu           = 10; stok_obat.vicks      = 10; stok_obat.verile       = 13; stok_obat.vitacid  = 7; stok_obat.waisan       = 5;
+        stok_obat.kasa          = 7; stok_obat.hansaplast         = 10; stok_obat.kapas      = 10; stok_obat.infus        = 13; stok_obat.betadine = 7; stok_obat.minyak       = 5;
+
+}
+
+void stok_barang(){
+
+        jmlh.acetaminophen = jmlh.acetaminophen + menu_obat.acetaminophen;
+        jmlh.acnes         = jmlh.acnes         + menu_obat.acnes;
+        jmlh.acnol1        = jmlh.acnol1        + menu_obat.acnol1;
+        jmlh.acnol2        = jmlh.acnol2        + menu_obat.acnol2;
+
+        
+        if(jmlh.acetaminophen > stok_obat.acetaminophen){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.acetaminophen = 0; sub.jmlbeli1  = 0;
+        }
+        if(jmlh.acnes > stok_obat.acnes){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.acnes = 0; sub.jmlbeli2  = 0;
+        }
+        if(jmlh.acnol1 > stok_obat.acnol1){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.acnol1 = 0; sub.jmlbeli3  = 0;
+        }
+        if(jmlh.acnol2 > stok_obat.acnol2){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.acnol2 = 0; sub.jmlbeli4  = 0;
+        }
+        if(jmlh.antasida > stok_obat.antasida){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.antasida = 0; sub.jmlbeli5  = 0;
+        }
+        if(jmlh.aspirin > stok_obat.aspirin){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.aspirin = 0; sub.jmlbeli6  = 0;
+        }
+        if(jmlh.betadine_mouthwash > stok_obat.betadine_mouthwash){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.betadine_mouthwash = 0; sub.jmlbeli7  = 0;
+        }
+        if(jmlh.benzolac > stok_obat.benzolac){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.benzolac = 0; sub.jmlbeli8  = 0;
+        }
+        if(jmlh.bodrex > stok_obat.bodrex){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.bodrex = 0; sub.jmlbeli9  = 0;
+        }
+        if(jmlh.cataflam > stok_obat.cataflam){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.cataflam = 0; sub.jmlbeli10  = 0;
+        }
+        if(jmlh.camaag_mint > stok_obat.camaag_mint){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.camaag_mint = 0; sub.jmlbeli11  = 0;
+        }
+        if(jmlh.cooling1 > stok_obat.cooling1){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.cooling1 = 0; sub.jmlbeli12  = 0;
+        }
+        if(jmlh.cooling2 > stok_obat.cooling2){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.cooling2 = 0; sub.jmlbeli13  = 0;
+        }
+        if(jmlh.degirol > stok_obat.degirol){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.degirol = 0; sub.jmlbeli14  = 0;
+        }
+        if(jmlh.dentasol > stok_obat.dentasol){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.dentasol = 0; sub.jmlbeli15  = 0;
+        }
+        if(jmlh.derma > stok_obat.derma){
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
+                printf ("\t\t\t\t%c                   STOK HABIS                   %c\n",186,186);
+                printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
+                menu_obat.derma = 0; sub.jmlbeli16  = 0;
+        }
+
+        stok_obat.acetaminophen = stok_obat.acetaminophen - jmlh.acetaminophen;
+        stok_obat.acnes         = stok_obat.acnes         - jmlh.acnes;
+        stok_obat.acnol1        = stok_obat.acnol1        - jmlh.acnol1;
+        stok_obat.acnol2        = stok_obat.acnol2        - jmlh.acnol2;
+        stok_obat.antasida      = stok_obat.antasida      - jmlh.antasida;
+        stok_obat.aspirin       = stok_obat.aspirin       - jmlh.aspirin;
+        stok_obat.betadine_mouthwash = stok_obat.betadine_mouthwash - jmlh.betadine_mouthwash;
+        stok_obat.benzolac      = stok_obat.benzolac      - jmlh.benzolac;
+        stok_obat.bodrex        = stok_obat.bodrex        - jmlh.bodrex;
+        stok_obat.cataflam      = stok_obat.cataflam      - jmlh.cataflam;
+        stok_obat.camaag_mint   = stok_obat.camaag_mint   - jmlh.camaag_mint;
+        stok_obat.cooling1      = stok_obat.cooling1      - jmlh.cooling1;
+        stok_obat.cooling2      = stok_obat.cooling2      - jmlh.cooling2;
+        stok_obat.degirol       = stok_obat.degirol       - jmlh.degirol;
+        stok_obat.dentasol      = stok_obat.dentasol      - jmlh.dentasol;
+        stok_obat.derma         = stok_obat.derma         - jmlh.derma;
+
+
 }
 
 //TAMPILAN AWAL PROGRAM
@@ -245,7 +416,7 @@ void login() {
 		system ("\t\t\t\t\tpause");
 		system ("cls");
                 cetak_login();
-		loading ();
+		//loading ();
 		menu();
 	}
 
@@ -305,16 +476,18 @@ void menu() {
 		case 1 : {
 			jenis_penyakit();
 			system ("pause");
+                        reset_data();
 			menu();
 		}
 			break;
 		case 2 : {
 			pembelian_obat();
 			system ("pause");
+                        reset_data();
 			menu();
 		}
 		case 0 : {
-            exit(0);
+                         exit(0);
 		}
 			break;
 		default: {
@@ -465,6 +638,8 @@ void jenis_penyakit(){
                                 Penghitungan();  //memanggil fungsi penghitungan
                         break;
                         case 88:
+                                reset_data();
+                                reset_obat();
                                 system("cls");  //cls untuk membuat layar menjadi kosong
                                 goto o1;       //me-reset pilihan user
                         break;
@@ -614,6 +789,8 @@ void jenis_penyakit(){
                         Penghitungan();  //memanggil fungsi penghitungan
                 break;
                 case 88:
+                        reset_data();
+                        reset_obat();
                         system("cls");  //cls untuk membuat layar menjadi kosong
                         goto o2;  //me-reset pilihan user
                 break;
@@ -738,6 +915,8 @@ void jenis_penyakit(){
                         Penghitungan();  //memanggil fungsi penghitungan
                 break;
                 case 88:
+                        reset_data();
+                        reset_obat();
                         system("cls");  //cls untuk membuat layar menjadi kosong
                         goto o3;  //me-reset pilihan user
                 break;
@@ -869,6 +1048,8 @@ void jenis_penyakit(){
                         Penghitungan();  //memanggil fungsi penghitungan
                 break;
                 case 88:
+                        reset_data();
+                        reset_obat();
                         system("cls");  //cls untuk membuat layar menjadi kosong
                         goto o4;       //me-reset pilihan user
                 break;
@@ -991,6 +1172,8 @@ void jenis_penyakit(){
                         Penghitungan();  //memanggil fungsi penghitungan
                 break;
                 case 88:
+                        reset_data();
+                        reset_obat();
                         system("cls");  //cls untuk membuat layar menjadi kosong
                         goto o5;  //me-reset pilihan user
                 break;
@@ -1128,6 +1311,8 @@ void jenis_penyakit(){
                         Penghitungan();  //memanggil fungsi penghitungan
                 break;
                 case 88:
+                        reset_data();
+                        reset_obat();
                         system("cls");  //cls untuk membuat layar menjadi kosong
                         goto o6;  //me-reset pilihan user
                 break;
@@ -1255,6 +1440,7 @@ void pembelian_obat(){
             scanf("%d",&menu_obat.acetaminophen);
             printf("\n===============================================\n");
             sub.jmlbeli1=menu_obat.acetaminophen *5200;
+            stok_barang();
             break;
 
     case 2:
@@ -1745,6 +1931,8 @@ void pembelian_obat(){
             Penghitungan();  //memanggil fungsi penghitungan
     break;
     case 88:
+            reset_data();
+            reset_obat();
             system("cls");  //cls untuk membuat layar menjadi kosong
             pembelian_obat();  //me-reset pilihan user
     break;
@@ -1858,8 +2046,11 @@ void Penghitungan(){
             +sub.jmlbeli51+sub.jmlbeli52+sub.jmlbeli53+sub.jmlbeli54+sub.jmlbeli55+sub.jmlbeli56+sub.jmlbeli57+sub.jmlbeli58+sub.jmlbeli59+sub.jmlbeli60
             +sub.jmlbeli61;
             printf("\n===============================\nTotal Harga adalah = Rp.%d,-\n===============================\n",sub.totalharga);
-
-   bayar:
+            
+            if(sub.totalharga <= 0){
+                menu();
+            }
+   bayar:       
             printf("\nMasukkan uang bayar = ");
             scanf("%d",&sub.bayar);
 
@@ -1894,67 +2085,67 @@ void struk()
         printf("|=======================|====================|===============|========================|");
         if (sub.jmlbeli1>0)
         {
-        printf("\n|    Acetaminophen \t|        5.200       |       %d\t\t|  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
+        printf("\n|    Acetaminophen \t|        5.200       |       %d\t     |  Rp.%d\t\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
         }
                 if (sub.jmlbeli2>0)
         {
-        printf("\n|  Acnes Sealing Jell\t|       29.000       |       %d\t\t|  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
+        printf("\n|    Acnes Sealing Jell |       29.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
         }
                 if (sub.jmlbeli3>0)
         {
-        printf("\n|    Acnol Lotion  \t|       15.000       |    %d\t\t|  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
+        printf("\n|    Acnol Lotion  \t|       15.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
         }
                 if (sub.jmlbeli4>0)
         {
-        printf("\n|    Acnol  acne gel\t|     25.300       |    %d\t\t|  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
+        printf("\n|    Acnol  acne gel\t|       25.300       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
         }
                 if (sub.jmlbeli5>0)
         {
-        printf("\n|    Antasida Doen\t|     13.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.antasida,sub.jmlbeli5);
+        printf("\n|    Antasida Doen \t|       13.500       |       %d\t     |  Rp.%d\t\t|",menu_obat.antasida,sub.jmlbeli5);
         }
                 if (sub.jmlbeli6>0)
         {
-        printf("\n|    Aspirin\t\t|     16.800 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.aspirin,sub.jmlbeli6);
+        printf("\n|    Aspirin\t\t|       16.800       |       %d\t     |  Rp.%d\t\t|",menu_obat.aspirin,sub.jmlbeli6);
         }
                 if (sub.jmlbeli7>0)
         {
-        printf("\n|    Betadine Mouthwash\t|     38.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.betadine_mouthwash,sub.jmlbeli7);
+        printf("\n|    Betadine Mouthwash |       38.500       |       %d\t     |  Rp.%d\t\t|",menu_obat.betadine_mouthwash,sub.jmlbeli7);
         }
                 if (sub.jmlbeli8>0)
         {
-        printf("\n|    Benzolac - CL\t|     35.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.benzolac,sub.jmlbeli8);
+        printf("\n|    Benzolac - CL\t|       35.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.benzolac,sub.jmlbeli8);
         }
                 if (sub.jmlbeli9>0)
         {
-        printf("\n|    Bodrex\t\t\t|     4.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.bodrex,sub.jmlbeli9);
+        printf("\n|    Bodrex\t\t|       4.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.bodrex,sub.jmlbeli9);
         }
                 if (sub.jmlbeli10>0)
         {
-        printf("\n|    Cataflam\t\t\t|     9.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cataflam,sub.jmlbeli10);
+        printf("\n|    Cataflam\t\t|       9.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.cataflam,sub.jmlbeli10);
         }
                 if (sub.jmlbeli11>0)
         {
-        printf("\n|    Camaag Mint\t|     71.820  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.camaag_mint,sub.jmlbeli11);
+        printf("\n|    Camaag Mint\t|      71.820        |       %d\t     |  Rp.%d\t\t|",menu_obat.camaag_mint,sub.jmlbeli11);
         }
                 if (sub.jmlbeli12>0)
         {
-        printf("\n|    Cooling 5 Plus\t|  45.332  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling1,sub.jmlbeli12);
+        printf("\n|    Cooling 5 Plus\t|      45.332        |       %d\t     |  Rp.%d\t\t|",menu_obat.cooling1,sub.jmlbeli12);
         }
                 if (sub.jmlbeli13>0)
         {
-        printf("\n|    Cooling 5 Spray\t|  36.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling2,sub.jmlbeli13);
+        printf("\n|    Cooling 5 Spray\t|      36.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.cooling2,sub.jmlbeli13);
         }
                 if (sub.jmlbeli14>0)
         {
-        printf("\n|    Degirol\t\t\t|  14.500  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.degirol,sub.jmlbeli14);
+        printf("\n|    Degirol\t\t|      14.500        |       %d\t     |  Rp.%d\t\t|",menu_obat.degirol,sub.jmlbeli14);
         }
                 if (sub.jmlbeli15>0)
         {
-        printf("\n|    Dentasol\t\t\t|  25.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.dentasol,sub.jmlbeli15);
+        printf("\n|    Dentasol\t\t|      25.000        |      %d\t     |  Rp.%d\t\t|",menu_obat.dentasol,sub.jmlbeli15);
         }
                 if (sub.jmlbeli16>0)
         {
-        printf("\n|   Derma Angel\t|  45.300 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.derma,sub.jmlbeli16);
+        printf("\n|   Derma Angel\t|      45.300        |    %d\t        |  Rp.%d\t\t|",menu_obat.derma,sub.jmlbeli16);
         }
                 if (sub.jmlbeli17>0)
         {
@@ -2151,7 +2342,8 @@ void struk()
         printf("---------------------------------------------------------------------------------------\n");
 
         cetak_struk();
-        reset_data();
+        cetak_stok();
+        // reset_data();
     }
 
 
@@ -2168,7 +2360,7 @@ void cetak_struk()
         fprintf(in,"|=======================|===============|=========|===================================|");
         if (sub.jmlbeli1>0)
         {
-        fprintf(in,"|    Acetaminophen \t|     5.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
+        fprintf(in,"\n|    Acetaminophen \t|     5.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
         }
                 if (sub.jmlbeli2>0)
         {
@@ -2425,3 +2617,19 @@ void cetak_struk()
         fprintf(in,"-------------------------------------------------------------------------------------\n\n\n");
     fclose(in);
     }
+
+
+void cetak_stok(){
+        FILE *file = fopen ("stok obat.txt", "a+");
+        fprintf(file,"------------------------------\n");
+        fprintf(file,"|          STOK OBAT         |\n");
+        fprintf(file,"------------------------------\n");
+        fprintf(file,"acetaminophen\n>> %d\n", stok_obat.acetaminophen);
+        fprintf(file,"acnes\n>> %d\n", stok_obat.acnes);
+        fprintf(file,"acnol1\n>> %d\n", stok_obat.acnol1);
+        fprintf(file,"acnol2\n>> %d\n", stok_obat.acnol2);
+        fprintf(file,"antasida\n>> %d\n", stok_obat.antasida);
+        fprintf(file,"aspirin\n>> %d\n", stok_obat.aspirin);
+
+        //menu();
+}

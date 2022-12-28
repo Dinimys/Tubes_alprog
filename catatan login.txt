@@ -56,5 +56,57 @@ username : akun
 Tanggal  : Mon Dec 26 22:45:05 2022
 
 username : akun
+<<<<<<< HEAD
 Tanggal  : Mon Dec 26 23:10:42 2022
+=======
+Tanggal  : Mon Dec 26 23:12:11 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:17:48 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:20:18 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:21:53 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:23:35 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:27:27 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:32:00 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:36:58 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:39:45 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:41:07 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:49:46 2022
+
+username : akun
+Tanggal  : Mon Dec 26 23:52:57 2022
+
+username : akun
+Tanggal  : Tue Dec 27 18:23:47 2022
+
+username : akun
+Tanggal  : Tue Dec 27 18:46:32 2022
+
+username : akun
+Tanggal  : Tue Dec 27 21:47:00 2022
+
+username : akun
+Tanggal  : Tue Dec 27 22:26:03 2022
+
+username : akun
+Tanggal  : Wed Dec 28 01:21:27 2022
+>>>>>>> 3c31b4a42678232ab951fc08213c96dc9aa6f6e7
 
