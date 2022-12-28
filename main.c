@@ -786,7 +786,7 @@ void login() {
 		printf ("\n\n\t\t\t\t%c%c==============================================%c%c\n",219,223,223,219);
                 printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<  S U K S E S  >>>>>>>>>>>>>>>>%c\n",186,186);
                 printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
-		sleep(1);
+		Sleep(1);
 		printf ("\t\t\t\t\t        Selamat  Datang  %s !\n\n\t\t\t\t", username);
 		system ("\t\t\t\t\tpause");
 		system ("cls");
@@ -802,7 +802,7 @@ void login() {
         printf ("\t\t\t\t%c<<<<<<<<<<<<<<<<<   G A G A L   >>>>>>>>>>>>>>>>%c\n",186,186);
         printf ("\t\t\t\t%c%c==============================================%c%c\n",219,220,220,219);
 
-        sleep(1);
+        Sleep(1);
         system ("pause");
 
         login();
@@ -2460,259 +2460,259 @@ void struk()
         printf("|=======================|====================|===============|========================|");
         if (sub.jmlbeli1>0)
         {
-        printf("\n|    Acetaminophen \t|        5.200       |       %d\t     |  Rp.%d\t\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
+        printf("\n|    Acetaminophen \t|        5.200       |       %d\t     |Rp.%d\t\t      |",menu_obat.acetaminophen,sub.jmlbeli1);
         }
                 if (sub.jmlbeli2>0)
         {
-        printf("\n|    Acnes Sealing Jell |       29.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
+        printf("\n|    Acnes Sealing Jell |       29.000       |       %d\t     |Rp.%d\t\t      |",menu_obat.acnes,sub.jmlbeli2);
         }
                 if (sub.jmlbeli3>0)
         {
-        printf("\n|    Acnol Lotion  \t|       15.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
+        printf("\n|    Acnol Lotion  \t|       15.000       |       %d\t     |Rp.%d\t\t      |",menu_obat.acnol1,sub.jmlbeli3);
         }
                 if (sub.jmlbeli4>0)
         {
-        printf("\n|    Acnol  acne gel\t|       25.300       |       %d\t     |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
+        printf("\n|    Acnol  acne gel\t|       25.300       |       %d\t     |Rp.%d\t\t      |",menu_obat.acnol2,sub.jmlbeli4);
         }
                 if (sub.jmlbeli5>0)
         {
-        printf("\n|    Antasida Doen \t|       13.500       |       %d\t     |  Rp.%d\t\t|",menu_obat.antasida,sub.jmlbeli5);
+        printf("\n|    Antasida Doen \t|       13.500       |       %d\t     |Rp.%d\t\t      |",menu_obat.antasida,sub.jmlbeli5);
         }
                 if (sub.jmlbeli6>0)
         {
-        printf("\n|    Aspirin\t\t|       16.800       |       %d\t     |  Rp.%d\t\t|",menu_obat.aspirin,sub.jmlbeli6);
+        printf("\n|    Aspirin\t\t|       16.800       |       %d\t     |Rp.%d\t\t      |",menu_obat.aspirin,sub.jmlbeli6);
         }
                 if (sub.jmlbeli7>0)
         {
-        printf("\n|    Betadine Mouthwash |       38.500       |       %d\t     |  Rp.%d\t\t|",menu_obat.betadine_mouthwash,sub.jmlbeli7);
+        printf("\n|    Betadine Mouthwash |       38.500       |       %d\t     |Rp.%d\t\t      |",menu_obat.betadine_mouthwash,sub.jmlbeli7);
         }
                 if (sub.jmlbeli8>0)
         {
-        printf("\n|    Benzolac - CL\t|       35.000       |       %d\t     |  Rp.%d\t\t|",menu_obat.benzolac,sub.jmlbeli8);
+        printf("\n|    Benzolac - CL\t|       35.000       |       %d\t     |Rp.%d\t\t      |",menu_obat.benzolac,sub.jmlbeli8);
         }
                 if (sub.jmlbeli9>0)
         {
-        printf("\n|    Bodrex\t\t|       4.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.bodrex,sub.jmlbeli9);
+        printf("\n|    Bodrex\t\t|       4.000        |       %d\t     |Rp.%d\t\t      |",menu_obat.bodrex,sub.jmlbeli9);
         }
                 if (sub.jmlbeli10>0)
         {
-        printf("\n|    Cataflam\t\t|       9.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.cataflam,sub.jmlbeli10);
+        printf("\n|    Cataflam\t\t|       9.000        |       %d\t     |Rp.%d\t\t      |",menu_obat.cataflam,sub.jmlbeli10);
         }
                 if (sub.jmlbeli11>0)
         {
-        printf("\n|    Camaag Mint\t|      71.820        |       %d\t     |  Rp.%d\t\t|",menu_obat.camaag_mint,sub.jmlbeli11);
+        printf("\n|    Camaag Mint\t|      71.820        |       %d\t     |Rp.%d\t\t      |",menu_obat.camaag_mint,sub.jmlbeli11);
         }
                 if (sub.jmlbeli12>0)
         {
-        printf("\n|    Cooling 5 Plus\t|      45.332        |       %d\t     |  Rp.%d\t\t|",menu_obat.cooling1,sub.jmlbeli12);
+        printf("\n|    Cooling 5 Plus\t|      45.332        |       %d\t     |Rp.%d\t\t      |",menu_obat.cooling1,sub.jmlbeli12);
         }
                 if (sub.jmlbeli13>0)
         {
-        printf("\n|    Cooling 5 Spray\t|      36.000        |       %d\t     |  Rp.%d\t\t|",menu_obat.cooling2,sub.jmlbeli13);
+        printf("\n|    Cooling 5 Spray\t|      36.000        |       %d\t     |Rp.%d\t\t      |",menu_obat.cooling2,sub.jmlbeli13);
         }
                 if (sub.jmlbeli14>0)
         {
-        printf("\n|    Degirol\t\t|      14.500        |       %d\t     |  Rp.%d\t\t|",menu_obat.degirol,sub.jmlbeli14);
+        printf("\n|    Degirol\t\t|      14.500        |       %d\t     |Rp.%d\t\t      |",menu_obat.degirol,sub.jmlbeli14);
         }
                 if (sub.jmlbeli15>0)
         {
-        printf("\n|    Dentasol\t\t|      25.000        |      %d\t     |  Rp.%d\t\t|",menu_obat.dentasol,sub.jmlbeli15);
+        printf("\n|    Dentasol\t\t|        25.000      |       %d\t     |Rp.%d\t\t      |",menu_obat.dentasol,sub.jmlbeli15);
         }
                 if (sub.jmlbeli16>0)
         {
-        printf("\n|   Derma Angel\t|      45.300        |    %d\t        |  Rp.%d\t\t|",menu_obat.derma,sub.jmlbeli16);
+        printf("\n|   Derma Angel\t|      45.300        |    %d\t        |Rp.%d\t\t  |",menu_obat.derma,sub.jmlbeli16);
         }
                 if (sub.jmlbeli17>0)
         {
-        printf("\n|    Efisol Loz\t|  30.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.efisol,sub.jmlbeli17);
+        printf("\n|    Efisol Loz\t	|        30.000      |       %d\t     |Rp.%d\t\t      |",menu_obat.efisol,sub.jmlbeli17);
         }
                    if (sub.jmlbeli18>0)
         {
-        printf("\n|  Erha Acne Spot Gel  \t|  350.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.erha,sub.jmlbeli18);
+        printf("\n|    Erha Acne Spot Gel |        350.000     |       %d\t     |Rp.%d\t\t      |",menu_obat.erha,sub.jmlbeli18);
         }
            if (sub.jmlbeli19>0)
         {
-        printf("\n|   Eugenia Dental\t| 17.199  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.eugenia,sub.jmlbeli19);
+        printf("\n|    Eugenia Dental\t|        17.199      |       %d\t     |Rp.%d\t\t      |    ",menu_obat.eugenia,sub.jmlbeli19);
         }
                    if (sub.jmlbeli20>0)
         {
-        printf("\n|    FG Troches Meiji\t| 16.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.troches,sub.jmlbeli20);
+        printf("\n|    FG Troches Meiji\t|        16.000      |       %d\t     |Rp.%d\t\t      |",menu_obat.troches,sub.jmlbeli20);
         }
                    if (sub.jmlbeli21>0)
         {
-        printf("\n|    Gumafixa\t|  250.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.gumafixa,sub.jmlbeli21);
+        printf("\n|    Gumafixa    \t|        250.000     |      %d\t     |Rp.%d\t\t      |",menu_obat.gumafixa,sub.jmlbeli21);
         }
                    if (sub.jmlbeli22>0)
         {
-        printf("\n|    Gastran\t|  8.402  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.gastran,sub.jmlbeli22);
+        printf("\n|    Gastran     \t|        8.402       |      %d\t     |Rp.%d\t\t      |",menu_obat.gastran,sub.jmlbeli22);
         }
                    if (sub.jmlbeli23>0)
         {
-        printf("\n|    Hexadol\t|  41.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.hexadol,sub.jmlbeli23);
+        printf("\n|    Hexadol     \t|        41.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.hexadol,sub.jmlbeli23);
         }
                    if (sub.jmlbeli24>0)
         {
-        printf("\n|    Ibuprofen\t|  7.900  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.ibuprofen,sub.jmlbeli24);
+        printf("\n|    Ibuprofen   \t|        7.900       |      %d\t     |Rp.%d\t\t      |",menu_obat.ibuprofen,sub.jmlbeli24);
         }
                    if (sub.jmlbeli25>0)
         {
-        printf("\n|    Indomethacin\t|  5.259 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.indomethacin,sub.jmlbeli25);
+        printf("\n|    Indomethacin\t|        5.259       |      %d\t     |Rp.%d\t\t      |",menu_obat.indomethacin,sub.jmlbeli25);
         }
                    if (sub.jmlbeli26>0)
         {
-        printf("\n|    Inza\t|  3.200  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.inza,sub.jmlbeli26);
+        printf("\n|    Inza       \t|        3.200       |      %d\t     |Rp.%d\t\t      |",menu_obat.inza,sub.jmlbeli26);
         }
                    if (sub.jmlbeli27>0)
         {
-        printf("\n|    Ketorolac\t|  43.500  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.ketorolac,sub.jmlbeli27);
+        printf("\n|    Ketorolac  \t|        43.500      |      %d\t     |Rp.%d\t\t      |",menu_obat.ketorolac,sub.jmlbeli27);
         }
                    if (sub.jmlbeli28>0)
         {
-        printf("\n|    Konidin\t| 2.800  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.konidin,sub.jmlbeli28);
+        printf("\n|    Konidin    \t|        2.800       |      %d\t     |Rp.%d\t\t      |",menu_obat.konidin,sub.jmlbeli28);
         }
                    if (sub.jmlbeli29>0)
         {
-        printf("\n|    Laserin\t|  28.800 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.laserin,sub.jmlbeli29);
+        printf("\n|    Laserin    \t|        28.800      |      %d\t     |Rp.%d\t\t      |",menu_obat.laserin,sub.jmlbeli29);
         }
                    if (sub.jmlbeli30>0)
         {
-        printf("\n|    Medi-Klin\t| 45.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.medi_klin,sub.jmlbeli30);
+        printf("\n|    Medi-Klin  \t|        45.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.medi_klin,sub.jmlbeli30);
         }
                    if (sub.jmlbeli31>0)
         {
-        printf("\n|    Mylanta\t| 18.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.mylanta,sub.jmlbeli31);
+        printf("\n|    Mylanta    \t|        18.500      |      %d\t     |Rp.%d\t\t      |",menu_obat.mylanta,sub.jmlbeli31);
         }
                    if (sub.jmlbeli32>0)
         {
-        printf("\n|    Naproxen\t|  335.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.naproxen,sub.jmlbeli32);
+        printf("\n|    Naproxen   \t|        335.000     |      %d\t     |Rp.%d\t\t      |",menu_obat.naproxen,sub.jmlbeli32);
         }
                    if (sub.jmlbeli33>0)
         {
-        printf("\n|    Neozep Forte\t|  3.100  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.neozep,sub.jmlbeli33);
+        printf("\n|    Neozep Forte\t|        3.100       |      %d\t     |Rp.%d\t\t      |",menu_obat.neozep,sub.jmlbeli33);
         }
                    if (sub.jmlbeli34>0)
         {
-        printf("\n|   Nutrimax C&C Syrup\t|  128.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.nutrimax,sub.jmlbeli34);
+        printf("\n|    Nutrimax C&C Syrup\t|        128.000     |      %d\t     |Rp.%d\t\t      |",menu_obat.nutrimax,sub.jmlbeli34);
         }
                    if (sub.jmlbeli35>0)
         {
-        printf("\n|    OBH Combi\t|  16.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.obh1,sub.jmlbeli35);
+        printf("\n|    OBH Combi   \t|        16.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.obh1,sub.jmlbeli35);
         }
                    if (sub.jmlbeli36>0)
         {
-        printf("\n|    OBH Combi Anak\t|  18.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.obh2,sub.jmlbeli36);
+        printf("\n|    OBH Combi Anak\t|        18.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.obh2,sub.jmlbeli36);
         }
                    if (sub.jmlbeli37>0)
         {
-        printf("\n|    Omeprazole\t|  12.300  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.omeprazole,sub.jmlbeli37);
+        printf("\n|    Omeprazole  \t|        12.300      |      %d\t     |Rp.%d\t\t      |",menu_obat.omeprazole,sub.jmlbeli37);
         }
                    if (sub.jmlbeli38>0)
         {
-        printf("\n|   Oskadon\t|  3.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.oskadon,sub.jmlbeli38);
+        printf("\n|    Oskadon      \t|        3.000       |      %d\t     |Rp.%d\t\t      |",menu_obat.oskadon,sub.jmlbeli38);
         }
                    if (sub.jmlbeli39>0)
         {
-        printf("\n|    Paramex SK\t|  4.600  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.paramex,sub.jmlbeli39);
+        printf("\n|    Paramex SK  \t|       4.600       |       %d\t     |Rp.%d\t\t      |",menu_obat.paramex,sub.jmlbeli39);
         }
                    if (sub.jmlbeli40>0)
         {
-        printf("\n|    Polycrol\t|  10.900 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.polycrol,sub.jmlbeli40);
+        printf("\n|    Polycrol    \t|       10.900      |       %d\t     |Rp.%d\t\t      |",menu_obat.polycrol,sub.jmlbeli40);
         }
                    if (sub.jmlbeli41>0)
         {
-        printf("\n|    Polysilane\t|  9.500\t|    %d\t  |  Rp.%d\t\t|",menu_obat.polysilane,sub.jmlbeli41);
+        printf("\n|    Polysilane  \t|        9.500       |      %d\t     |Rp.%d\t\t      |",menu_obat.polysilane,sub.jmlbeli41);
         }
                    if (sub.jmlbeli42>0)
         {
-        printf("\n|    Ponstan\t|  40.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ponstan,sub.jmlbeli42);
+        printf("\n|    Ponstan     \t|        40.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.ponstan,sub.jmlbeli42);
         }
                    if (sub.jmlbeli43>0)
         {
-        printf("\n|    Procold\t|  4.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.procold,sub.jmlbeli43);
+        printf("\n|    Procold     \t|        4.200       |      %d\t     |Rp.%d\t\t      |",menu_obat.procold,sub.jmlbeli43);
         }
                    if (sub.jmlbeli44>0)
         {
-        printf("\n|    Promag\t\t\t|  9.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.promag,sub.jmlbeli44);
+        printf("\n|    Promag      \t|        9.000       |      %d\t     |Rp.%d\t\t      |",menu_obat.promag,sub.jmlbeli44);
         }
                    if (sub.jmlbeli45>0)
         {
-        printf("\n|    Ranitidine\t|  5.600\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ranitidine,sub.jmlbeli45);
+        printf("\n|    Ranitidine  \t|        5.600       |      %d\t     |Rp.%d\t\t      |",menu_obat.ranitidine,sub.jmlbeli45);
         }
                    if (sub.jmlbeli46>0)
         {
-        printf("\n|    Sanmol\t|  2.700\t|    %d\t  |  Rp.%d\t\t|",menu_obat.sanmol,sub.jmlbeli46);
+        printf("\n|    Sanmol      \t|        2.700       |      %d\t     |Rp.%d\t\t      |",menu_obat.sanmol,sub.jmlbeli46);
         }
                    if (sub.jmlbeli47>0)
         {
-        printf("\n|    Siladex Cough\t|  17.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.siladex,sub.jmlbeli47);
+        printf("\n|    Siladex Cough\t|        17.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.siladex,sub.jmlbeli47);
         }
                    if (sub.jmlbeli48>0)
         {
-        printf("\n|    SP Troches Meiji\t|  17.600 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.sp,sub.jmlbeli48);
+        printf("\n|    SP Troches Meiji\t|        17.600      |      %d\t     |Rp.%d\t\t      |",menu_obat.sp,sub.jmlbeli48);
         }
                    if (sub.jmlbeli49>0)
         {
-        printf("\n|   Sumagesic \t|  12.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.sumagesic,sub.jmlbeli49);
+        printf("\n|    Sumagesic   \t|        12.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.sumagesic,sub.jmlbeli49);
         }
                    if (sub.jmlbeli50>0)
         {
-        printf("\n|    Tantum Lozenges\t|  34.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.tantum,sub.jmlbeli50);
+        printf("\n|    Tantum Lozenges\t|        34.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.tantum,sub.jmlbeli50);
         }
                    if (sub.jmlbeli51>0)
         {
-        printf("\n|    Ultraflu\t|  4.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ultraflu,sub.jmlbeli51);
+        printf("\n|    Ultraflu    \t|        4.300       |      %d\t     |Rp.%d\t\t      |",menu_obat.ultraflu,sub.jmlbeli51);
         }
                    if (sub.jmlbeli52>0)
         {
-        printf("\n|    Vicks Formula 44\t|  20.100\t|    %d\t  |  Rp.%d\t\t|",menu_obat.vicks,sub.jmlbeli52);
+        printf("\n|    Vicks Formula 44\t|        20.100      |      %d\t     |Rp.%d\t\t      |",menu_obat.vicks,sub.jmlbeli52);
         }
                    if (sub.jmlbeli53>0)
         {
-        printf("\n|    Verile Acne Gel\t|  33.100\t|    %d\t  |  Rp.%d\t\t|",menu_obat.verile,sub.jmlbeli53);
+        printf("\n|    Verile Acne Gel\t|        33.100      |      %d\t     |Rp.%d\t\t      |",menu_obat.verile,sub.jmlbeli53);
         }
                    if (sub.jmlbeli54>0)
         {
-        printf("\n|    Vitacid\t|  30.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.vitacid,sub.jmlbeli54);
+        printf("\n|    Vitacid     \t|        30.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.vitacid,sub.jmlbeli54);
         }
                    if (sub.jmlbeli55>0)
         {
-        printf("\n|    Waisan\t|  15.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.waisan,sub.jmlbeli55);
+        printf("\n|    Waisan      \t|        15.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.waisan,sub.jmlbeli55);
         }
                    if (sub.jmlbeli56>0)
         {
-        printf("\n|    Kasa Steril\t|  8.733\t|    %d\t  |  Rp.%d\t\t|",menu_obat.kasa,sub.jmlbeli56);
+        printf("\n|    Kasa Steril\t|        8.733       |      %d\t     |Rp.%d\t\t      |",menu_obat.kasa,sub.jmlbeli56);
         }
                    if (sub.jmlbeli57>0)
         {
-        printf("\n|    Hansaplast\t|  16.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.hansaplast,sub.jmlbeli57);
+        printf("\n|    Hansaplast  \t|        16.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.hansaplast,sub.jmlbeli57);
         }
                    if (sub.jmlbeli58>0)
         {
-        printf("\n|    Kapas Pembalut\t|  18.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.kapas,sub.jmlbeli58);
+        printf("\n|    Kapas Pembalut\t|        18.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.kapas,sub.jmlbeli58);
         }
                    if (sub.jmlbeli59>0)
         {
-        printf("\n|    Infus\t|  12.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.infus,sub.jmlbeli59);
+        printf("\n|    Infus       \t|        12.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.infus,sub.jmlbeli59);
         }
                    if (sub.jmlbeli60>0)
         {
-        printf("\n|    Betadine\t|  6.500\t|    %d\t  |  Rp.%d\t\t|",menu_obat.betadine,sub.jmlbeli60);
+        printf("\n|    Betadine    \t|        6.500       |      %d\t     |Rp.%d\t\t      |",menu_obat.betadine,sub.jmlbeli60);
         }
                    if (sub.jmlbeli61>0)
         {
-        printf("\n|    Minyak Kayu Putih\t|  46.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.minyak,sub.jmlbeli61);
+        printf("\n|    Minyak Kayu Putih\t|   46.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.minyak,sub.jmlbeli61);
         }
 
 
 
         printf("\n|_____________________________________________________________________________________|");
-        printf("\n| Total Keseluruhan = %d\t\t\t\t\t\t|", sub.totalharga);
-        printf("\n| Uang bayar        = %d\t\t\t\t\t\t|", sub.bayar);
-        printf("\n| Kembalian         = %d\t\t\t\t\t\t|", sub.kembalian);
+        printf("\n| Total Keseluruhan = %d\t\t\t\t\t\t              |", sub.totalharga);
+        printf("\n| Uang bayar        = %d\t\t\t\t\t\t              |", sub.bayar);
+        printf("\n| Kembalian         = %d\t\t\t\t\t\t              |", sub.kembalian);
         printf("\n|                                                                                     |");
         printf("\n|                                                                                     |");
-        printf("\n| Waktu/Hari : %s|", ctime (&ambil_waktu));
-        printf("\n|Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t\t\t  |");
+        printf("\n| Waktu/Hari : %s|", ctime (&ambil_waktu));                                           
+        printf("\n| Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t\t\t      |");
         printf("\n|                                                                                     |\n");
         printf("---------------------------------------------------------------------------------------\n");
 
@@ -2724,272 +2724,272 @@ void struk()
 
 void cetak_struk()
     {
-        FILE *in = fopen ("struk_pembelian_obat.txt", "a+");
+		FILE *in = fopen ("struk_pembelian_obat.txt", "a+");
         time(&ambil_waktu); //mengambil waktu saat ini
-        fprintf(in,"=======================================================================================\n");
-        fprintf(in,"| \t\t\t                STRUK PEMBAYARAN                                       \t  |\n");
-        fprintf(in,"| \t\t                    APOTEK JAYA ABADI                                    \t  |\n");
-        fprintf(in,"| \tJalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361  |\n");
+    	fprintf(in,"=======================================================================================\n");
+        fprintf(in,"|                                STRUK PEMBAYARAN                                     |\n");
+        fprintf(in,"|                                APOTEK JAYA ABADI                                    |\n");
+        fprintf(in,"|  Jalan Raya Kampus Udayana, Jimbaran, Kec.Kuta Sel., Kabupaten Badung, Bali 80361   |\n");
         fprintf(in,"|_____________________________________________________________________________________|\n");
-        fprintf(in,"|    Nama Obat  \t   | Harga Satuan  | Jumlah  | \t    Total  \t|\n");
-        fprintf(in,"|=======================|===============|=========|===================================|");
+        fprintf(in,"|    Nama Obat          |    Harga Satuan    |    Jumlah     |         Total          |\n");
+        fprintf(in,"|=======================|====================|===============|========================|");
         if (sub.jmlbeli1>0)
         {
-        fprintf(in,"\n|    Acetaminophen \t|     5.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acetaminophen,sub.jmlbeli1);
+        fprintf(in,"\n|    Acetaminophen \t|        5.200       |       %d\t     |Rp.%d\t\t      |",menu_obat.acetaminophen,sub.jmlbeli1);
         }
                 if (sub.jmlbeli2>0)
         {
-        fprintf(in,"\n|  Acnes Sealing Jell\t|     29.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnes,sub.jmlbeli2);
+        fprintf(in,"\n|    Acnes Sealing Jell |       29.000       |       %d\t     |Rp.%d\t\t      |",menu_obat.acnes,sub.jmlbeli2);
         }
                 if (sub.jmlbeli3>0)
         {
-        fprintf(in,"\n|    Acnol Lotion\t|     15.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol1,sub.jmlbeli3);
+        fprintf(in,"\n|    Acnol Lotion  \t|       15.000       |       %d\t     |Rp.%d\t\t      |",menu_obat.acnol1,sub.jmlbeli3);
         }
                 if (sub.jmlbeli4>0)
         {
-        fprintf(in,"\n|    Acnol  acne gel\t|      25.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.acnol2,sub.jmlbeli4);
+        fprintf(in,"\n|    Acnol  acne gel\t|       25.300       |       %d\t     |Rp.%d\t\t      |",menu_obat.acnol2,sub.jmlbeli4);
         }
                 if (sub.jmlbeli5>0)
         {
-        fprintf(in,"\n|    Antasida Doen\t|     13.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.antasida,sub.jmlbeli5);
+        fprintf(in,"\n|    Antasida Doen \t|       13.500       |       %d\t     |Rp.%d\t\t      |",menu_obat.antasida,sub.jmlbeli5);
         }
                 if (sub.jmlbeli6>0)
         {
-        fprintf(in,"\n|    Aspirin\t\t|     16.800 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.aspirin,sub.jmlbeli6);
+        fprintf(in,"\n|    Aspirin\t\t|       16.800       |       %d\t     |Rp.%d\t\t      |",menu_obat.aspirin,sub.jmlbeli6);
         }
                 if (sub.jmlbeli7>0)
         {
-        fprintf(in,"\n|    Betadine Mouthwash\t|     38.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.betadine_mouthwash,sub.jmlbeli7);
+        fprintf(in,"\n|    Betadine Mouthwash |       38.500       |       %d\t     |Rp.%d\t\t      |",menu_obat.betadine_mouthwash,sub.jmlbeli7);
         }
                 if (sub.jmlbeli8>0)
         {
-        fprintf(in,"\n|    Benzolac - CL\t|     35.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.benzolac,sub.jmlbeli8);
+        fprintf(in,"\n|    Benzolac - CL\t|       35.000       |       %d\t     |Rp.%d\t\t      |",menu_obat.benzolac,sub.jmlbeli8);
         }
                 if (sub.jmlbeli9>0)
         {
-        fprintf(in,"\n|    Bodrex\t\t\t|     4.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.bodrex,sub.jmlbeli9);
+        fprintf(in,"\n|    Bodrex\t\t|       4.000        |       %d\t     |Rp.%d\t\t      |",menu_obat.bodrex,sub.jmlbeli9);
         }
                 if (sub.jmlbeli10>0)
         {
-        fprintf(in,"\n|    Cataflam\t\t\t|     9.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cataflam,sub.jmlbeli10);
+        fprintf(in,"\n|    Cataflam\t\t|       9.000        |       %d\t     |Rp.%d\t\t      |",menu_obat.cataflam,sub.jmlbeli10);
         }
                 if (sub.jmlbeli11>0)
         {
-        fprintf(in,"\n|    Camaag Mint\t|     71.820  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.camaag_mint,sub.jmlbeli11);
+        fprintf(in,"\n|    Camaag Mint\t|      71.820        |       %d\t     |Rp.%d\t\t      |",menu_obat.camaag_mint,sub.jmlbeli11);
         }
                 if (sub.jmlbeli12>0)
         {
-        fprintf(in,"\n|    Cooling 5 Plus\t|  45.332  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling1,sub.jmlbeli12);
+        fprintf(in,"\n|    Cooling 5 Plus\t|      45.332        |       %d\t     |Rp.%d\t\t      |",menu_obat.cooling1,sub.jmlbeli12);
         }
                 if (sub.jmlbeli13>0)
         {
-        fprintf(in,"\n|    Cooling 5 Spray\t|  36.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.cooling2,sub.jmlbeli13);
+        fprintf(in,"\n|    Cooling 5 Spray\t|      36.000        |       %d\t     |Rp.%d\t\t      |",menu_obat.cooling2,sub.jmlbeli13);
         }
                 if (sub.jmlbeli14>0)
         {
-        fprintf(in,"\n|    Degirol\t\t\t|  14.500  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.degirol,sub.jmlbeli14);
+        fprintf(in,"\n|    Degirol\t\t|      14.500        |       %d\t     |Rp.%d\t\t      |",menu_obat.degirol,sub.jmlbeli14);
         }
                 if (sub.jmlbeli15>0)
         {
-        fprintf(in,"\n|    Dentasol\t\t\t|  25.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.dentasol,sub.jmlbeli15);
+        fprintf(in,"\n|    Dentasol\t\t|        25.000      |       %d\t     |Rp.%d\t\t      |",menu_obat.dentasol,sub.jmlbeli15);
         }
                 if (sub.jmlbeli16>0)
         {
-        fprintf(in,"\n|   Derma Angel\t|  45.300 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.derma,sub.jmlbeli16);
+        fprintf(in,"\n|   Derma Angel\t|      45.300        |    %d\t        |Rp.%d\t\t  |",menu_obat.derma,sub.jmlbeli16);
         }
                 if (sub.jmlbeli17>0)
         {
-        fprintf(in,"\n|    Efisol Loz\t|  30.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.efisol,sub.jmlbeli17);
+        fprintf(in,"\n|    Efisol Loz\t	|        30.000      |       %d\t     |Rp.%d\t\t      |",menu_obat.efisol,sub.jmlbeli17);
         }
                    if (sub.jmlbeli18>0)
         {
-        fprintf(in,"\n|  Erha Acne Spot Gel  \t|  350.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.erha,sub.jmlbeli18);
+        fprintf(in,"\n|    Erha Acne Spot Gel |        350.000     |       %d\t     |Rp.%d\t\t      |",menu_obat.erha,sub.jmlbeli18);
         }
            if (sub.jmlbeli19>0)
         {
-        fprintf(in,"\n|   Eugenia Dental\t| 17.199  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.eugenia,sub.jmlbeli19);
+        fprintf(in,"\n|    Eugenia Dental\t|        17.199      |       %d\t     |Rp.%d\t\t      |    ",menu_obat.eugenia,sub.jmlbeli19);
         }
                    if (sub.jmlbeli20>0)
         {
-        fprintf(in,"\n|    FG Troches Meiji\t| 16.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.troches,sub.jmlbeli20);
+        fprintf(in,"\n|    FG Troches Meiji\t|        16.000      |       %d\t     |Rp.%d\t\t      |",menu_obat.troches,sub.jmlbeli20);
         }
                    if (sub.jmlbeli21>0)
         {
-        fprintf(in,"\n|    Gumafixa\t|  250.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.gumafixa,sub.jmlbeli21);
+        fprintf(in,"\n|    Gumafixa    \t|        250.000     |      %d\t     |Rp.%d\t\t      |",menu_obat.gumafixa,sub.jmlbeli21);
         }
                    if (sub.jmlbeli22>0)
         {
-        fprintf(in,"\n|    Gastran\t|  8.402  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.gastran,sub.jmlbeli22);
+        fprintf(in,"\n|    Gastran     \t|        8.402       |      %d\t     |Rp.%d\t\t      |",menu_obat.gastran,sub.jmlbeli22);
         }
                    if (sub.jmlbeli23>0)
         {
-        fprintf(in,"\n|    Hexadol\t|  41.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.hexadol,sub.jmlbeli23);
+        fprintf(in,"\n|    Hexadol     \t|        41.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.hexadol,sub.jmlbeli23);
         }
                    if (sub.jmlbeli24>0)
         {
-        fprintf(in,"\n|    Ibuprofen\t|  7.900  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.ibuprofen,sub.jmlbeli24);
+        fprintf(in,"\n|    Ibuprofen   \t|        7.900       |      %d\t     |Rp.%d\t\t      |",menu_obat.ibuprofen,sub.jmlbeli24);
         }
                    if (sub.jmlbeli25>0)
         {
-        fprintf(in,"\n|    Indomethacin\t|  5.259 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.indomethacin,sub.jmlbeli25);
+        fprintf(in,"\n|    Indomethacin\t|        5.259       |      %d\t     |Rp.%d\t\t      |",menu_obat.indomethacin,sub.jmlbeli25);
         }
                    if (sub.jmlbeli26>0)
         {
-        fprintf(in,"\n|    Inza\t|  3.200  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.inza,sub.jmlbeli26);
+        fprintf(in,"\n|    Inza       \t|        3.200       |      %d\t     |Rp.%d\t\t      |",menu_obat.inza,sub.jmlbeli26);
         }
                    if (sub.jmlbeli27>0)
         {
-        fprintf(in,"\n|    Ketorolac\t|  43.500  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.ketorolac,sub.jmlbeli27);
+        fprintf(in,"\n|    Ketorolac  \t|        43.500      |      %d\t     |Rp.%d\t\t      |",menu_obat.ketorolac,sub.jmlbeli27);
         }
                    if (sub.jmlbeli28>0)
         {
-        fprintf(in,"\n|    Konidin\t| 2.800  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.konidin,sub.jmlbeli28);
+        fprintf(in,"\n|    Konidin    \t|        2.800       |      %d\t     |Rp.%d\t\t      |",menu_obat.konidin,sub.jmlbeli28);
         }
                    if (sub.jmlbeli29>0)
         {
-        fprintf(in,"\n|    Laserin\t|  28.800 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.laserin,sub.jmlbeli29);
+        fprintf(in,"\n|    Laserin    \t|        28.800      |      %d\t     |Rp.%d\t\t      |",menu_obat.laserin,sub.jmlbeli29);
         }
                    if (sub.jmlbeli30>0)
         {
-        fprintf(in,"\n|    Medi-Klin\t| 45.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.medi_klin,sub.jmlbeli30);
+        fprintf(in,"\n|    Medi-Klin  \t|        45.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.medi_klin,sub.jmlbeli30);
         }
                    if (sub.jmlbeli31>0)
         {
-        fprintf(in,"\n|    Mylanta\t| 18.500 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.mylanta,sub.jmlbeli31);
+        fprintf(in,"\n|    Mylanta    \t|        18.500      |      %d\t     |Rp.%d\t\t      |",menu_obat.mylanta,sub.jmlbeli31);
         }
                    if (sub.jmlbeli32>0)
         {
-        fprintf(in,"\n|    Naproxen\t|  335.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.naproxen,sub.jmlbeli32);
+        fprintf(in,"\n|    Naproxen   \t|        335.000     |      %d\t     |Rp.%d\t\t      |",menu_obat.naproxen,sub.jmlbeli32);
         }
                    if (sub.jmlbeli33>0)
         {
-        fprintf(in,"\n|    Neozep Forte\t|  3.100  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.neozep,sub.jmlbeli33);
+        fprintf(in,"\n|    Neozep Forte\t|        3.100       |      %d\t     |Rp.%d\t\t      |",menu_obat.neozep,sub.jmlbeli33);
         }
                    if (sub.jmlbeli34>0)
         {
-        fprintf(in,"\n|   Nutrimax C&C Syrup\t|  128.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.nutrimax,sub.jmlbeli34);
+        fprintf(in,"\n|    Nutrimax C&C Syrup\t|        128.000     |      %d\t     |Rp.%d\t\t      |",menu_obat.nutrimax,sub.jmlbeli34);
         }
                    if (sub.jmlbeli35>0)
         {
-        fprintf(in,"\n|    OBH Combi\t|  16.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.obh1,sub.jmlbeli35);
+        fprintf(in,"\n|    OBH Combi   \t|        16.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.obh1,sub.jmlbeli35);
         }
                    if (sub.jmlbeli36>0)
         {
-        fprintf(in,"\n|    OBH Combi Anak\t|  18.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.obh2,sub.jmlbeli36);
+        fprintf(in,"\n|    OBH Combi Anak\t|        18.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.obh2,sub.jmlbeli36);
         }
                    if (sub.jmlbeli37>0)
         {
-        fprintf(in,"\n|    Omeprazole\t|  12.300  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.omeprazole,sub.jmlbeli37);
+        fprintf(in,"\n|    Omeprazole  \t|        12.300      |      %d\t     |Rp.%d\t\t      |",menu_obat.omeprazole,sub.jmlbeli37);
         }
                    if (sub.jmlbeli38>0)
         {
-        fprintf(in,"\n|   Oskadon\t|  3.000  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.oskadon,sub.jmlbeli38);
+        fprintf(in,"\n|    Oskadon      \t|        3.000       |      %d\t     |Rp.%d\t\t      |",menu_obat.oskadon,sub.jmlbeli38);
         }
                    if (sub.jmlbeli39>0)
         {
-        fprintf(in,"\n|    Paramex SK\t|  4.600  \t|    %d\t  |  Rp.%d\t\t|",menu_obat.paramex,sub.jmlbeli39);
+        fprintf(in,"\n|    Paramex SK  \t|       4.600       |       %d\t     |Rp.%d\t\t      |",menu_obat.paramex,sub.jmlbeli39);
         }
                    if (sub.jmlbeli40>0)
         {
-        fprintf(in,"\n|    Polycrol\t|  10.900 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.polycrol,sub.jmlbeli40);
+        fprintf(in,"\n|    Polycrol    \t|       10.900      |       %d\t     |Rp.%d\t\t      |",menu_obat.polycrol,sub.jmlbeli40);
         }
                    if (sub.jmlbeli41>0)
         {
-        fprintf(in,"\n|    Polysilane\t|  9.500\t|    %d\t  |  Rp.%d\t\t|",menu_obat.polysilane,sub.jmlbeli41);
+        fprintf(in,"\n|    Polysilane  \t|        9.500       |      %d\t     |Rp.%d\t\t      |",menu_obat.polysilane,sub.jmlbeli41);
         }
                    if (sub.jmlbeli42>0)
         {
-        fprintf(in,"\n|    Ponstan\t|  40.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ponstan,sub.jmlbeli42);
+        fprintf(in,"\n|    Ponstan     \t|        40.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.ponstan,sub.jmlbeli42);
         }
                    if (sub.jmlbeli43>0)
         {
-        fprintf(in,"\n|    Procold\t|  4.200\t|    %d\t  |  Rp.%d\t\t|",menu_obat.procold,sub.jmlbeli43);
+        fprintf(in,"\n|    Procold     \t|        4.200       |      %d\t     |Rp.%d\t\t      |",menu_obat.procold,sub.jmlbeli43);
         }
                    if (sub.jmlbeli44>0)
         {
-        fprintf(in,"\n|    Promag\t\t\t|  9.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.promag,sub.jmlbeli44);
+        fprintf(in,"\n|    Promag      \t|        9.000       |      %d\t     |Rp.%d\t\t      |",menu_obat.promag,sub.jmlbeli44);
         }
                    if (sub.jmlbeli45>0)
         {
-        fprintf(in,"\n|    Ranitidine\t|  5.600\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ranitidine,sub.jmlbeli45);
+        fprintf(in,"\n|    Ranitidine  \t|        5.600       |      %d\t     |Rp.%d\t\t      |",menu_obat.ranitidine,sub.jmlbeli45);
         }
                    if (sub.jmlbeli46>0)
         {
-        fprintf(in,"\n|    Sanmol\t|  2.700\t|    %d\t  |  Rp.%d\t\t|",menu_obat.sanmol,sub.jmlbeli46);
+        fprintf(in,"\n|    Sanmol      \t|        2.700       |      %d\t     |Rp.%d\t\t      |",menu_obat.sanmol,sub.jmlbeli46);
         }
                    if (sub.jmlbeli47>0)
         {
-        fprintf(in,"\n|    Siladex Cough\t|  17.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.siladex,sub.jmlbeli47);
+        fprintf(in,"\n|    Siladex Cough\t|        17.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.siladex,sub.jmlbeli47);
         }
                    if (sub.jmlbeli48>0)
         {
-        fprintf(in,"\n|    SP Troches Meiji\t|  17.600 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.sp,sub.jmlbeli48);
+        fprintf(in,"\n|    SP Troches Meiji\t|        17.600      |      %d\t     |Rp.%d\t\t      |",menu_obat.sp,sub.jmlbeli48);
         }
                    if (sub.jmlbeli49>0)
         {
-        fprintf(in,"\n|   Sumagesic \t|  12.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.sumagesic,sub.jmlbeli49);
+        fprintf(in,"\n|    Sumagesic   \t|        12.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.sumagesic,sub.jmlbeli49);
         }
                    if (sub.jmlbeli50>0)
         {
-        fprintf(in,"\n|    Tantum Lozenges\t|  34.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.tantum,sub.jmlbeli50);
+        fprintf(in,"\n|    Tantum Lozenges\t|        34.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.tantum,sub.jmlbeli50);
         }
                    if (sub.jmlbeli51>0)
         {
-        fprintf(in,"\n|    Ultraflu\t|  4.300\t|    %d\t  |  Rp.%d\t\t|",menu_obat.ultraflu,sub.jmlbeli51);
+        fprintf(in,"\n|    Ultraflu    \t|        4.300       |      %d\t     |Rp.%d\t\t      |",menu_obat.ultraflu,sub.jmlbeli51);
         }
                    if (sub.jmlbeli52>0)
         {
-        fprintf(in,"\n|    Vicks Formula 44\t|  20.100\t|    %d\t  |  Rp.%d\t\t|",menu_obat.vicks,sub.jmlbeli52);
+       	fprintf(in,"\n|    Vicks Formula 44\t|        20.100      |      %d\t     |Rp.%d\t\t      |",menu_obat.vicks,sub.jmlbeli52);
         }
                    if (sub.jmlbeli53>0)
         {
-        fprintf(in,"\n|    Verile Acne Gel\t|  33.100\t|    %d\t  |  Rp.%d\t\t|",menu_obat.verile,sub.jmlbeli53);
+        fprintf(in,"\n|    Verile Acne Gel\t|        33.100      |      %d\t     |Rp.%d\t\t      |",menu_obat.verile,sub.jmlbeli53);
         }
                    if (sub.jmlbeli54>0)
         {
-        fprintf(in,"\n|    Vitacid\t|  30.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.vitacid,sub.jmlbeli54);
+        fprintf(in,"\n|    Vitacid     \t|        30.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.vitacid,sub.jmlbeli54);
         }
                    if (sub.jmlbeli55>0)
         {
-        fprintf(in,"\n|    Waisan\t|  15.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.waisan,sub.jmlbeli55);
+        fprintf(in,"\n|    Waisan      \t|        15.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.waisan,sub.jmlbeli55);
         }
                    if (sub.jmlbeli56>0)
         {
-        fprintf(in,"\n|    Kasa Steril\t|  8.733\t|    %d\t  |  Rp.%d\t\t|",menu_obat.kasa,sub.jmlbeli56);
+        fprintf(in,"\n|    Kasa Steril\t|        8.733       |      %d\t     |Rp.%d\t\t      |",menu_obat.kasa,sub.jmlbeli56);
         }
                    if (sub.jmlbeli57>0)
         {
-        fprintf(in,"\n|    Hansaplast\t|  16.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.hansaplast,sub.jmlbeli57);
+        fprintf(in,"\n|    Hansaplast  \t|        16.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.hansaplast,sub.jmlbeli57);
         }
                    if (sub.jmlbeli58>0)
         {
-        fprintf(in,"\n|    Kapas Pembalut\t|  18.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.kapas,sub.jmlbeli58);
+        fprintf(in,"\n|    Kapas Pembalut\t|        18.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.kapas,sub.jmlbeli58);
         }
                    if (sub.jmlbeli59>0)
         {
-        fprintf(in,"\n|    Infus\t|  12.000 \t|    %d\t  |  Rp.%d\t\t|",menu_obat.infus,sub.jmlbeli59);
+        fprintf(in,"\n|    Infus       \t|        12.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.infus,sub.jmlbeli59);
         }
                    if (sub.jmlbeli60>0)
         {
-        fprintf(in,"\n|    Betadine\t|  6.500\t|    %d\t  |  Rp.%d\t\t|",menu_obat.betadine,sub.jmlbeli60);
+        fprintf(in,"\n|    Betadine    \t|        6.500       |      %d\t     |Rp.%d\t\t      |",menu_obat.betadine,sub.jmlbeli60);
         }
                    if (sub.jmlbeli61>0)
         {
-        fprintf(in,"\n|    Minyak Kayu Putih\t|  46.000\t|    %d\t  |  Rp.%d\t\t|",menu_obat.minyak,sub.jmlbeli61);
+        fprintf(in,"\n|    Minyak Kayu Putih\t|   46.000      |      %d\t     |Rp.%d\t\t      |",menu_obat.minyak,sub.jmlbeli61);
         }
 
 
 
         fprintf(in,"\n|_____________________________________________________________________________________|");
-        fprintf(in,"\n| Total Keseluruhan = %d\t\t\t\t\t\t\t\t\t\t\t\t\t|", sub.totalharga);
-        fprintf(in,"\n| Uang bayar        = %d\t\t\t\t\t\t\t\t\t\t\t\t\t|", sub.bayar);
-        fprintf(in,"\n| Kembalian         = %d\t\t\t\t\t\t\t\t\t\t\t\t\t|", sub.kembalian);
-        fprintf(in,"\n|                                                                                    |");
-        fprintf(in,"\n|                                                                                    |");
-        fprintf(in,"\n| Waktu/Hari : %s|", ctime (&ambil_waktu));
-        fprintf(in,"\n|Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t|");
-        fprintf(in,"\n|                                                                                    |\n");
-        fprintf(in,"-------------------------------------------------------------------------------------\n\n\n");
+        fprintf(in,"\n| Total Keseluruhan = %d\t\t\t\t\t\t              |", sub.totalharga);
+        fprintf(in,"\n| Uang bayar        = %d\t\t\t\t\t\t              |", sub.bayar);
+        fprintf(in,"\n| Kembalian         = %d\t\t\t\t\t\t              |", sub.kembalian);
+        fprintf(in,"\n|                                                                                     |");
+        fprintf(in,"\n|                                                                                     |");
+        fprintf(in,"\n| Waktu/Hari : %s|", ctime (&ambil_waktu));                                           
+        fprintf(in,"\n| Perhatian : Barang yang dibeli tidak bisa dikembalikan!\t\t\t      |");
+        fprintf(in,"\n|                                                                                     |\n");
+        fprintf(in,"---------------------------------------------------------------------------------------\n");
     fclose(in);
     }
 
